@@ -1,6 +1,6 @@
 from .. import colors, data_maker
 from . base import LEDBase
-from .. layout.strip import gen_strip
+from .. layout import gen_strip
 
 
 class LEDStrip(LEDBase):

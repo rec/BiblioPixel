@@ -1,5 +1,5 @@
 import unittest
-from bibliopixel.layout import segment
+from bibliopixel.transforms import segment
 
 
 class SegmentTest(unittest.TestCase):

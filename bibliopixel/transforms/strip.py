@@ -28,7 +28,3 @@ def fill(strip, item, start=0, stop=None, step=1):
 
     for i in range(start, stop, step):
         strip[i] = item
-
-
-def gen_strip(num):
-    return [[x, 0, 0] for x in range(num)]
