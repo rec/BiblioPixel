@@ -21,10 +21,10 @@ class Segment(strip.Strip):
     def __setitem__(self, index, value):
         self.strip[self._fix_index(index)] = value
 
-    def __len__(self):
-        return self.length
+    def size(self):
+        return (self.length, )
 
-    def next(self, length):
+    def following(self, length):
         """Return a new segment starting right after self in the same buffer."""
         return Segment(self.strip, length, self.offset + self.length)
 
@@ -46,6 +46,6 @@ def make_segments(strip, length):
     s = []
     try:
         while True:
-            s.append(s[-1].next(length) if s else Segment(strip, length))
+            s.append(s[-1].following(length) if s else Segment(strip, length))
     except ValueError:
         return s

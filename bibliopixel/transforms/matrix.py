@@ -1,44 +1,63 @@
-from . import index_ops
+from . import transforms
 
 
-class Matrix(object):
-    """Map a matrix onto a strip of lights."""
+def guess_size(columns=None, rows=None, length=None):
+    """
+    Given at least two of columns, rows and length, returns (columns, rows), or
+    throws an exception if the paramters are inconsistent.
+    """
+    if length is None:
+        assert not (columns is None or rows is None)
 
-    def __init__(self, strip, columns=None, rows=None,
-                 reflect_x=False, reflect_y=False,
-                 serpentine_x=False, serpentine_y=False,
-                 transpose=False):
+    elif columns is None:
+        assert rows is not None
+        columns = length // rows
+
+    elif rows is None:
+        rows = length // columns
+
+    else:
+        assert rows * columns <= length
+
+    return columns, rows
+
+
+def array_index(point, size, bigendian):
+    if isinstance(point, int):
+        return point
+
+    if bigendian:
+        start, stop, step = len(point) - 1, -1, -1
+    else:
+        start, stop, step = 0, len(point), 1
+
+    index = point[start]
+    last_size = size[start]
+
+    for i in range(start + step, stop, step):
+        index *= last_size
+        index += point[i]
+        last_size = size[i]
+
+    return index
+
+
+class ArrayMap(object):
+    """Map points onto a strip of lights."""
+
+    def __init__(self, strip, size,
+                 transform=transforms.identity, bigendian=False):
         self.strip = strip
+        self.size = size
+        self.transform = transform
+        self.bigendian = bigendian
 
-        if columns:
-            if not rows:
-                rows = len(strip) // columns
-            elif rows * columns > len(strip):
-                raise IndexError('Index out of range.')
-        elif rows:
-            columns = len(strip) // rows
-        else:
-            raise ValueError('Must supply either rows or columns')
-        self.columns, self.rows = columns, rows
+    def index(self, point):
+        point = self.transform(point, self.size)
+        return array_index(point, self.size, self.bigendian)
 
-        ops = (reflect_x and index_ops.reflect_x,
-               reflect_y and index_ops.reflect_y,
-               serpentine_x and index_ops.serpentine_x,
-               serpentine_y and index_ops.serpentine_y,
-               transpose and index_ops.transpose)
-        self.operations = list(filter(None, ops))
+    def __getitem__(self, point):
+        return self.strip[self.point_to_index(point)]
 
-    def _index(self, x, y):
-        for o in self.operations:
-            x, y = o(x, y, self)
-
-        if 0 <= x < self.columns and 0 <= y < self.rows:
-            return x + y * self.columns
-
-        raise IndexError('Index out of range.')
-
-    def get(self, x, y):
-        return self.strip[self._index(x, y)]
-
-    def set(self, x, y, value):
-        self.strip[self._index(x, y)] = value
+    def __setitem__(self, point, value):
+        self.strip[self.point_to_index(point)] = value
