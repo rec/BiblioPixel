@@ -1,6 +1,13 @@
 import unittest
 import bibliopixel
+
 from bibliopixel.main import demo, main, run, set, show
+
+from bibliopixel.threads import (
+    animation_threading, compose_events, producer_consumer, task_thread,
+    threads, update_threading)
+
+from bibliopixel.drivers.SimPixel import driver, websocket
 
 from bibliopixel import (
     animation,
@@ -15,14 +22,13 @@ from bibliopixel import (
     log,
     matrix,
     return_codes,
-    # serial_gamepad,
+    # serial_gamepad,  # Needs gamepad, only available on Windows
     util,
 )
 
 from bibliopixel.drivers import (
     APA102,
     LPD8806,
-    # SimPixel,
     WS2801,
     driver_base,
     dummy_driver,
@@ -33,7 +39,6 @@ from bibliopixel.drivers import (
     network_udp,
     serial_driver,
     spi_driver_base,
-    # timedata_visualizer,
 )
 
 
