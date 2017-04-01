@@ -20,3 +20,12 @@ except ImportError:
 
 def keyboard_loop(callback, **kwds):
     return Loop(lambda: callback(getch()), **kwds)
+
+
+def print_keycodes():
+    while True:
+        ch = getch()
+        if ch == 'q':
+            return
+        print(ch)
+        print(*(ord(c) for c in ch))
