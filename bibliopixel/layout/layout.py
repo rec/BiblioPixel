@@ -33,7 +33,8 @@ class Layout(object):
         return cls(project.drivers, maker=project.maker, **desc)
 
     def __init__(self, drivers, threadedUpdate=False, brightness=255,
-                 maker=data_maker.MAKER, color_list=None, **kwds):
+                 maker=data_maker.MAKER, color_list=None, transforms=None,
+                 **kwds):
         attributes.set_reserved(self, 'layout', **kwds)
         self.drivers = drivers if isinstance(drivers, list) else [drivers]
         self.maker = maker
@@ -51,6 +52,7 @@ class Layout(object):
         pos = 0
         for d in self.drivers:
             d.set_colors(self._colors, pos)
+            # d.set_colors(self.transforms.color_list, pos)
             pos += d.numLEDs
 
         self.frame_render_time = 0
@@ -71,6 +73,7 @@ class Layout(object):
         return self.push_to_driver()
 
     def start(self):
+        # self.transforms.start(self)
         for d in self.drivers:
             d.start()
 
@@ -146,6 +149,10 @@ class Layout(object):
             color_list = color_list[:size]
         self._colors[offset:offset + len(color_list)] = color_list
 
+    @property
+    def transformed_color_list(self):
+        return self.transforms.color_list
+
     def _get_base(self, pixel):
         if pixel >= 0 and pixel < self.numLEDs:
             return self._colors[pixel]
@@ -169,6 +176,27 @@ class Layout(object):
         """Push the current pixel state to the driver"""
         # This is overridden elsewhere.
         self.threading.push_to_driver()
+
+    def transform_and_push_to_driver(self):
+        self.transforms.transform()
+        self.push_to_driver()
+
+    # use with caution!
+    def set_colors(self, buf):
+        """Use with extreme caution!
+        Directly sets the internal buffer and bypasses all brightness and rotation control.
+        buf must also be in the exact format required by the display type.
+        """
+        if len(self._colors) != len(buf):
+            raise IOError("Data buffer size incorrect! "
+                          "Expected: {} bytes / Received: {} bytes"
+                          .format(len(self._colors), len(buf)))
+        self._colors[:] = buf
+
+    def setBuffer(self, buf):
+        """DEPRECATED!"""
+        # https://stackoverflow.com/questions/1624883
+        self.set_colors(buf=list(zip(*(iter(buf),) * 3)))
 
     def set_brightness(self, brightness):
         self.brightness = brightness
