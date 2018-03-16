@@ -6,7 +6,7 @@ from .. channel_order import ChannelOrder
 from .. driver_base import DriverBase
 from ... util import log, util
 from ... drivers.return_codes import (
-    RETURN_CODES, print_error, raise_error, BiblioSerialError)
+    RETURN_CODES, print_error, raise_error, BiblioSerialError, ReturnCode)
 
 
 class Serial(DriverBase):

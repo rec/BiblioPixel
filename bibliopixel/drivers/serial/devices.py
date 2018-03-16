@@ -131,3 +131,7 @@ class Devices(object):
             if resp == RETURN_CODES.SUCCESS:
                 ver = ord(com.read(1))
         return ver
+
+    def _read_response(self, com):
+        resp = com.read(1)
+        return RETURN_CODES.NO_RESPONSE if resp is None else ord(resp)
