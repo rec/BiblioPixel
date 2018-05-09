@@ -4,7 +4,7 @@ from bibliopixel.util.colors import printer
 from bibliopixel.animation import tests as animation_tests
 from test.bibliopixel import mark_tests
 from test.bibliopixel.project import make
-from test.bibliopixel.util import udp_test
+from test.bibliopixel.util.network import udp_test
 from bibliopixel.drivers import artnet
 
 LOCALHOST = '127.0.0.1'

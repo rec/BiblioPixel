@@ -3,12 +3,7 @@ import socket, sys, time, os
 from . driver_base import DriverBase
 from .. util import log, util
 from .. drivers.return_codes import RETURN_CODES
-
-
-class CMDTYPE:
-    SETUP_DATA = 1  # reserved for future use
-    PIXEL_DATA = 2
-    BRIGHTNESS = 3
+from . import network
 
 
 class NetworkUDP(DriverBase):
@@ -26,7 +21,8 @@ class NetworkUDP(DriverBase):
     """
 
     def __init__(self, num=0, width=0, height=0, host="localhost",
-                 broadcast=False, port=3142, broadcast_interface='', **kwds):
+                 broadcast=False, port=network.DEFAULT_PORT,
+                 broadcast_interface='', **kwds):
         super().__init__(num, width, height, **kwds)
 
         self._host = host
@@ -59,7 +55,7 @@ class NetworkUDP(DriverBase):
     def _compute_packet(self):
         self._render()
         count = self.bufByteCount()
-        self._packet = util.generate_header(CMDTYPE.PIXEL_DATA, count)
+        self._packet = util.generate_header(network.CMDTYPE.PIXEL_DATA, count)
         self._packet.extend(self._buf)
 
     # Push new data to strand

@@ -1,6 +1,7 @@
 import collections, copy, queue
 from . import control
-from .. util import artnet_message, log, server_cache, udp
+from .. util import artnet_message, log, server_cache
+from .. util.network import udp
 
 QUEUE_TIMEOUT = 0.1
 

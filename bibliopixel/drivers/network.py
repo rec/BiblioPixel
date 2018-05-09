@@ -12,6 +12,9 @@ class CMDTYPE:
     BRIGHTNESS = 3
 
 
+DEFAULT_PORT = 3142
+
+
 class Network(DriverBase):
     """Driver for communicating with another device on the network.
 
@@ -25,7 +28,8 @@ class Network(DriverBase):
     :param int port: Network port of receiver
     """
 
-    def __init__(self, num=0, width=0, height=0, host="localhost", port=3142, **kwds):
+    def __init__(self, num=0, width=0, height=0, host='localhost',
+                 port=DEFAULT_PORT, **kwds):
         super().__init__(num, width, height, **kwds)
 
         self._host = host

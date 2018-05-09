@@ -3,7 +3,7 @@ from bibliopixel.control import artnet
 from bibliopixel.util import artnet_message, udp, json
 from .. project import make
 from .. import mark_tests
-from test.bibliopixel.util import udp_test
+from test.bibliopixel.util.network import udp_test
 
 
 class ArtNetControlTest(unittest.TestCase):

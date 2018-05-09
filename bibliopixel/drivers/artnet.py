@@ -27,6 +27,3 @@ class ArtNet(ServerDriver):
         if not (self.filter_dupes and msg == self.last_message):
             self.server.send(msg)
             self.last_message = msg
-
-    def _on_positions(self):
-        pass
