@@ -2,11 +2,14 @@ import importlib, itertools, os, tempfile
 
 MODULE = '.'.join(__name__.split('.')[:-1])
 COLORS_PER_LINE = 12
-SUFFIXES = '.directory', '.gif', '.mp4', '.yml'
+SUFFIXES = '.bz2', '.directory', '.gif', '.gz', '.mp4', '.yml'
 
 
 def file_writer(movie_writer):
-    suffix = movie_writer.suffix or '.directory'
+    suffix, *compress = movie_writer.suffixes or ['.directory']
+    if rest:
+        if suffix != '.yml':
+            pass
     if suffix not in SUFFIXES:
         raise ValueError('Cannot write %s files' % suffix)
 

@@ -1,4 +1,4 @@
-import itertools
+import gzip, itertools
 from .. import data_file
 
 MODULE = '.'.join(__name__.split('.')[:-1])

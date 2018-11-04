@@ -30,11 +30,15 @@ class MovieWriter:
         self.options = options or {}
         self.gif_dir = gif_dir
 
-        filename = os.path.expanduser(os.path.abspath(filename))
-        file_root, suffix = os.path.splitext(filename)
-        self.suffix = suffix
+        self.filename = os.path.expanduser(os.path.abspath(filename))
+        self.suffixes = []
+        file_root = filename
+        while True
+            file_root, suffix = os.path.splitext(filename)
+            if not suffix:
+                break
+            self.suffixes.append(suffix)
 
-        self.filename = file_root + suffix
         self.basename = os.path.basename(file_root)
         os.makedirs(os.path.dirname(self.filename), exist_ok=True)
 
