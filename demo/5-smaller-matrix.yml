@@ -1,0 +1,17 @@
+animation:
+  typename: sequence
+  length: 4
+  animations:
+    - $bpa.matrix.BinaryClock.MatrixBinaryClock
+    - $bpa.matrix.CPUUsage
+    - $bpa.matrix.GameOfLife
+    - $bpa.matrix.GameOfLife.GameOfLifeRGB
+    - $bpa.matrix.GradientClock
+    - $bpa.matrix.LangtonsAnt.LangtonsAntRainbow
+    - $bpa.matrix.Mainframe
+    - $bpa.matrix.MatrixRain
+    - $bpa.matrix.MatrixRain.MatrixRainBow
+    - $bpa.matrix.SpinningTriangle
+    - $bpa.matrix.bloom
+    - $bpa.matrix.perlin_simplex
+    - $bpa.matrix.pinwheel

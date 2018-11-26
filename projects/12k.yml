@@ -1,0 +1,37 @@
+driver:
+  typename: .serial.driver.TeensySmartMatrix
+  width: 128
+  height: 32
+
+drivers:
+  - device_id: 10
+  - device_id: 11
+  - device_id: 12
+
+layout:
+    typename: matrix
+    width: 128
+    height: 96
+    gen_coord_map:
+        - {dx: 128, dy: 32}
+        - {dx: 128, dy: 32}
+        - {dx: 128, dy: 32}
+
+run:
+  fps: 60
+
+# animation: .tests.PixelTester
+
+#animation:
+#  typename: $bpa.matrix.bloom
+
+# animation: .tests.MatrixChannelTest
+# animation: $bpa.strip.Wave
+animation:
+  typename: $bpa.matrix.MathFunc
+  func: 18
+  rand: false
+  palette: energy
+# animation:
+#  typename: .fill
+#  color: blue

@@ -62,7 +62,7 @@ class MatrixCalibrationTest(Matrix):
 
 class PixelTester(Animation):
     """"""
-    PAUSE = 10
+    PAUSE = 1
 
     def __init__(self, *args, brightness=1.0, **kwds):
         self.brightness = brightness
@@ -83,9 +83,10 @@ class PixelTester(Animation):
             color = tuple(c * self.brightness for c in color)
             for i in range(len(self.color_list)):
                 self.color_list[i] = color
-                yield
+                if not (i % 128):
+                    yield
 
-            for i in range(self.PAUSE):
+            for i in range(self.PAUSE and 0):
                 yield
 
             self.color_list = [COLORS.Black] * len(self.color_list)
