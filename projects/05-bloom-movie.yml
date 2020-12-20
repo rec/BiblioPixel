@@ -1,0 +1,22 @@
+shape: [64, 64]
+
+run:
+  until_complete: true
+
+animation:
+  typename: .movie_writer
+
+  run:
+    fps: 120
+    seconds: 16
+
+  filename: bloom.gif
+
+  render:
+    pixel_width: 1
+    frame: 1
+    padding: 1
+    ellipse: false
+
+  animation:
+    $bpa.matrix.bloom

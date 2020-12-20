@@ -1,0 +1,5343 @@
+
+benchmark/matrix_test.py,1059
+def make_matrix(10,168
+def assert_changed(15,316
+def assert_unchanged(22,506
+def test_draw_circle1(27,651
+    def test(30,732
+def test_draw_circle2(41,1070
+    def test(44,1149
+def test_draw_circle3(51,1332
+    def test(54,1412
+def test_fill_circle1(61,1565
+    def test(64,1646
+def test_fill_circle2(81,2519
+    def test(84,2598
+def test_fill_circle3(91,2744
+    def test(94,2824
+def test_bresenham1(101,2970
+    def test(105,3094
+def test_bresenham2(114,3313
+    def test(118,3462
+def test_wu1(127,3685
+    def test(131,3802
+def test_wu2(141,4008
+    def test(147,4231
+def test_draw_rect(156,4440
+    def test(159,4518
+def test_fill_rect(166,4686
+    def test(169,4764
+def test_fill_screen(177,5039
+    def test(180,5119
+def DISABLED_test_draw_round_rect(187,5255
+    def test(190,5348
+def DISABLED_test_fill_round_rect(197,5500
+    def test(200,5593
+def test_draw_triangle(207,5745
+    def test(210,5827
+def DISABLED_test_fill_triangle(219,6155
+    def test(222,6246
+def test_draw_text(229,6402
+    def test(232,6480
+
+benchmark/strip_test.py,116
+def led(12,186
+def test_fill(17,265
+    def do_fill(18,296
+def test_fill_hsv(25,442
+    def do_fill_hsv(26,477
+
+bibliopixel/__init__.py,25
+def _get_version(19,681
+
+bibliopixel/animation/adaptor.py,166
+def adapt_animation_layout(13,258
+            def adaptor(35,913
+            def adaptor(42,1132
+            def adaptor(49,1354
+            def adaptor(56,1572
+
+bibliopixel/animation/animation.py,678
+class Animation(8,213
+    def construct(21,464
+    def __init__(43,1177
+    def set_project(71,2371
+    def _led(77,2546
+    def _led(82,2687
+    def color_list(86,2759
+    def color_list(90,2847
+    def completed(94,2928
+    def completed(99,3102
+    def pre_run(102,3213
+    def title(106,3264
+    def step(109,3325
+    def cleanup(112,3366
+    def add_preframe_callback(119,3619
+    def start(131,4054
+    def stop(134,4107
+    def join(137,4168
+    def run_all_frames(140,4240
+    def generate_frames(144,4329
+    def _run_one_frame(157,4743
+    def _pre_run(188,5766
+    def _set_runner(208,6308
+    def run(213,6503
+def _report_framerate(224,6740
+
+bibliopixel/animation/animation_threading.py,300
+class AnimationThreading:AnimationThreading5,49
+    def __init__(11,187
+    def set_project(19,415
+    def join(22,493
+    def is_alive(25,578
+    def cleanup(28,657
+    def target(33,848
+    def wait(39,1083
+    def start(56,1658
+        def start_thread(59,1712
+    def stopped(80,2270
+
+bibliopixel/animation/circle.py,44
+class Circle(6,96
+    def __init__(10,182
+
+bibliopixel/animation/collection.py,509
+class Collection(10,208
+    def pre_recursion(16,331
+    def __init__(25,599
+    def cleanup(33,882
+    def add_animation(39,1064
+    def pre_run(46,1274
+    def set_project(50,1356
+    def detach(55,1499
+class _AnimationList:_AnimationList67,1820
+    def __init__(68,1842
+    def _index(72,1997
+    def append(77,2129
+    def __getitem__(100,2918
+    def __getattr__(103,2997
+    def __iter__(106,3051
+    def __len__(109,3114
+def _clean_animation(113,3176
+def _make_names_unique(165,5053
+
+bibliopixel/animation/cube.py,41
+class Cube(5,63
+    def __init__(9,148
+
+bibliopixel/animation/failed.py,44
+class Failed(6,67
+    def __init__(12,233
+
+bibliopixel/animation/feedback.py,93
+class Feedback(6,75
+    def __init__(7,100
+    def step(26,793
+        def rotate(33,948
+
+bibliopixel/animation/fill.py,62
+class Fill(5,63
+    def __init__(9,165
+    def step(18,510
+
+bibliopixel/animation/game.py,244
+class Game(4,30
+    def __init__(6,51
+    def _exit(15,300
+    def setSpeed(20,475
+    def getSpeed(23,548
+    def _checkSpeed(26,617
+    def checkSpeed(29,697
+    def addKeyFunc(32,807
+    def handleKeys(44,1151
+    def step(65,1886
+
+bibliopixel/animation/indexed.py,250
+class Indexed(5,62
+    def index(22,620
+    def index(29,787
+    def _on_index(34,948
+    def pre_run(45,1361
+    def step(49,1434
+    def forward(60,1727
+    def backward(63,1784
+    def animation(67,1856
+    def current_animation(76,2133
+
+bibliopixel/animation/limiter.py,89
+class Limiter(6,87
+    def __init__(7,119
+    def pre_run(15,399
+    def step(19,501
+
+bibliopixel/animation/matrix.py,43
+class Matrix(5,65
+    def __init__(9,160
+
+bibliopixel/animation/mixer.py,109
+class Mixer(6,68
+    def __init__(7,100
+    def levels(17,388
+    def levels(21,463
+    def step(24,532
+
+bibliopixel/animation/movie_writer.py,125
+class MovieWriter(5,80
+    def __init__(10,218
+    def set_project(40,1468
+    def step(44,1589
+    def cleanup(49,1727
+
+bibliopixel/animation/off.py,61
+class Off(4,36
+    def __init__(7,128
+    def step(11,259
+
+bibliopixel/animation/parallel.py,99
+class Parallel(4,27
+    def __init__(11,255
+    def generate_frames(20,552
+    def step(24,703
+
+bibliopixel/animation/pov.py,63
+class POV(8,158
+    def __init__(9,178
+    def step(30,1129
+
+bibliopixel/animation/receiver.py,216
+class HOST_TYPE(7,102
+class Receiver(22,326
+    def __init__(25,374
+    def pre_run(38,813
+    def start(41,858
+    def thread_cleanup(47,1082
+    def stop(51,1164
+    def _exit(56,1287
+    def step(59,1353
+
+bibliopixel/animation/remote/control.py,348
+def normalize_name(24,552
+class RemoteControl(30,714
+    def pre_recursion(32,770
+    def __init__(83,2713
+    def cleanup(176,5996
+    def on_completion(190,6421
+    def run_animation(195,6549
+    def stop_animation(212,7091
+    def change_brightness(215,7164
+    def get_config(225,7434
+    def pre_run(233,7646
+    def step(239,7798
+
+bibliopixel/animation/remote/opener.py,63
+def opener(7,86
+def raw_opener(18,347
+    def target(22,480
+
+bibliopixel/animation/remote/server.py,286
+class RemoteServer:RemoteServer18,451
+    def __init__(19,471
+    def shutdown_server(27,726
+    def _set_routes(35,959
+    def index(43,1341
+    def static_files(47,1450
+    def run_animation(51,1576
+    def stop_animation(54,1674
+    def api(57,1747
+def run_server(78,2308
+
+bibliopixel/animation/remote/trigger.py,81
+class TriggerBase:TriggerBase1,0
+    def __init__(2,19
+    def trigger(6,103
+
+bibliopixel/animation/remote/trigger_process.py,22
+def run_trigger(4,31
+
+bibliopixel/animation/reprocess/functions.py,17
+def sorter(4,47
+
+bibliopixel/animation/reprocess/reprocess.py,162
+class MatrixIndexer:MatrixIndexer8,144
+    def __init__(11,200
+    def __call__(16,399
+class Reprocess(20,466
+    def __init__(21,500
+    def step(38,1039
+
+bibliopixel/animation/runner.py,167
+class STATE(9,121
+class Runner(18,243
+    def __init__(20,266
+    def set_project(75,2086
+    def fps(81,2233
+    def fps(85,2304
+    def compute_state(88,2363
+
+bibliopixel/animation/sequence.py,141
+class Sequence(6,70
+    def __init__(7,103
+    def restart(23,690
+    def pre_run(27,791
+    def step(32,888
+    def _on_index(44,1244
+
+bibliopixel/animation/split.py,92
+class Split(12,197
+    def __init__(14,221
+    def step(31,946
+    def _foreach(42,1375
+
+bibliopixel/animation/strip.py,42
+class Strip(5,64
+    def __init__(9,145
+
+bibliopixel/animation/tests.py,363
+class StripChannelTest(11,298
+    def __init__(13,330
+    def step(18,467
+class MatrixChannelTest(26,660
+    def __init__(28,694
+    def step(33,878
+class MatrixCalibrationTest(45,1422
+    def __init__(47,1460
+    def step(53,1693
+class PixelTester(63,1970
+    def __init__(67,2027
+    def pre_run(71,2160
+    def step(74,2220
+    def steps(80,2356
+
+bibliopixel/animation/wrapper.py,76
+class Wrapper(4,32
+    def pre_recursion(14,281
+    def animation(21,525
+
+bibliopixel/builder/builder.py,409
+class Builder(11,277
+    def __init__(19,477
+    def start(29,776
+    def stop(39,1148
+    def clear(52,1519
+    def is_running(58,1680
+    def threaded(63,1815
+    def threaded(71,2066
+    def simpixel(75,2164
+    def animations(80,2349
+    def __repr__(84,2448
+    def __iadd__(88,2560
+    def __add__(92,2644
+    def __radd__(98,2751
+    def __copy__(104,2859
+    def __deepcopy__(107,2909
+
+bibliopixel/builder/description.py,398
+class Description:Description7,130
+    def __init__(17,334
+    def clear(20,380
+    def items(27,621
+    def update(31,740
+    def as_dict(42,1171
+    def desc(47,1321
+    def __str__(50,1368
+    def __getitem__(56,1503
+    def __setitem__(59,1567
+    def __getattr__(62,1656
+    def __setattr__(68,1834
+    def __dir__(74,2021
+    def __contains__(77,2105
+    def __iter__(80,2172
+
+bibliopixel/builder/pixels.py,206
+class Pixels:Pixels6,91
+    def __init__(11,206
+    def __getitem__(14,284
+    def __setitem__(22,542
+    def clear(36,976
+    def layout(41,1086
+    def shape(49,1294
+    def _check_index(52,1349
+
+bibliopixel/builder/runner.py,145
+class Runner:Runner6,89
+    def __init__(10,179
+    def start(15,316
+    def stop(28,689
+    def instance(47,1233
+    def _target(53,1396
+
+bibliopixel/builder/saved_description.py,284
+class SavedDescription:SavedDescription5,70
+    def __init__(9,172
+    def load(19,469
+    def save(25,722
+    def clear(30,947
+    def __str__(34,1045
+    def __repr__(37,1099
+    def project_file(45,1304
+    def project_file(49,1392
+    def _request_project_file(56,1610
+
+bibliopixel/builder/sections.py,61
+def set_one(8,150
+def update(42,1297
+def _as_dict(59,1859
+
+bibliopixel/colors/arithmetic.py,45
+def color_blend(1,0
+def color_scale(10,266
+
+bibliopixel/colors/closest_colors.py,90
+def closest_colors(5,39
+def euclidean(19,421
+def taxicab(25,572
+def all_colors(30,679
+
+bibliopixel/colors/colors.py,192
+class Colors:Colors4,23
+    def __getitem__(28,392
+    def __getattr__(34,537
+    def __setitem__(40,721
+    def __setattr__(43,809
+    def __iter__(46,903
+    def __contains__(49,969
+
+bibliopixel/colors/conversions.py,429
+def hsv2rgb_raw(5,38
+def hsv2rgb_spectrum(63,1784
+def hsv2rgb_rainbow(70,1968
+    def nscale8x3_video(75,2151
+    def scale8_video_LEAVING_R1_DIRTY(87,2502
+def hsv2rgb_360(158,4319
+def hue2rgb_raw(176,4996
+def hue2rgb_rainbow(183,5151
+def hue2rgb_spectrum(190,5314
+def hue2rgb_360(197,5479
+def hue_gradient(208,5688
+def hue_helper(227,6160
+def hue_helper360(231,6266
+def rgb_to_hsv(235,6379
+def color_cmp(239,6462
+
+bibliopixel/colors/gamma.py,84
+class Gamma(1,0
+    def __init__(6,88
+        def gam(19,547
+    def get(24,699
+
+bibliopixel/colors/legacy_palette.py,29
+def pop_legacy_palette(4,21
+
+bibliopixel/colors/make.py,273
+def color(7,100
+def _(12,215
+def _(24,492
+def _(29,563
+def _(37,741
+def colors(45,918
+def _(51,1076
+def _(57,1148
+def _(62,1204
+def _(67,1261
+def _(72,1326
+def to_triplets(76,1359
+def _colors(97,1864
+def colors_no_palette(111,2127
+def _split_colors(122,2457
+
+bibliopixel/colors/names.py,146
+def name_to_color(10,135
+    def to_color(18,478
+def color_to_name(50,1320
+def toggle(69,1879
+def _from_number(85,2481
+def to_color(94,2647
+
+bibliopixel/colors/palette.py,172
+class Palette(5,47
+    def __init__(13,247
+    def __call__(53,1873
+    def get(56,1944
+    def __setitem__(119,3646
+    def __eq__(123,3761
+    def __ne__(128,3923
+
+bibliopixel/colors/palettes.py,41
+def get(17,384
+def set_default(62,2258
+
+bibliopixel/colors/printer.py,18
+def printer(5,46
+
+bibliopixel/colors/tables.py,197
+def canonical_name(9,83
+def to_triplet(13,152
+def set_user_colors(19,265
+def get_color(31,541
+def get_name(36,655
+def all_named_colors(40,737
+def contains(48,979
+def _classic_pairs(58,1262
+
+bibliopixel/colors/wheel.py,69
+def _gen_wheel(1,0
+def wheel_color(24,409
+def wheel_helper(31,604
+
+bibliopixel/commands/all_pixel.py,117
+def get_input(27,665
+def get_int(31,716
+def _show_select_list(39,837
+def run(49,1087
+def add_arguments(112,3051
+
+bibliopixel/commands/all_pixel_test.py,43
+def run(35,778
+def add_arguments(49,1091
+
+bibliopixel/commands/animations.py,128
+def run(13,327
+def add_arguments(33,946
+def _animation_category(37,1008
+def _get_classes(50,1334
+def _canonicalize(78,1962
+
+bibliopixel/commands/clear_cache.py,40
+def run(8,69
+def add_arguments(12,112
+
+bibliopixel/commands/demo.py,99
+def make_runnable_animation(23,312
+def usage(51,1271
+def run(55,1347
+def add_arguments(76,1856
+
+bibliopixel/commands/devices.py,43
+def run(11,171
+def add_arguments(53,1718
+
+bibliopixel/commands/info.py,66
+def run(19,403
+def add_arguments(34,816
+def _dependency(38,878
+
+bibliopixel/commands/monitor.py,42
+def run(10,103
+def add_arguments(25,452
+
+bibliopixel/commands/new.py,43
+def run(26,471
+def add_arguments(62,1594
+
+bibliopixel/commands/pid.py,42
+def run(20,231
+def add_arguments(29,453
+
+bibliopixel/commands/run.py,42
+def run(10,157
+def add_arguments(15,280
+
+bibliopixel/control/action.py,325
+class Action(7,115
+    def __init__(13,265
+    def set_project(17,375
+    def receive(20,454
+    def __bool__(30,803
+    def __str__(33,874
+    def make(39,1022
+class ActionList(47,1216
+    def __init__(50,1274
+    def set_project(55,1458
+    def receive(59,1561
+    def __bool__(64,1698
+    def __str__(67,1757
+
+bibliopixel/control/address.py,690
+def number(34,1001
+class Address:Address41,1090
+    class Segment:Segment42,1105
+        def __init__(43,1124
+        def set(46,1188
+    class Attribute(49,1296
+        def get(50,1326
+        def _set(53,1400
+        def __str__(56,1482
+    class Index(59,1547
+        def get(60,1573
+        def _set(63,1638
+        def __str__(66,1712
+    class Call(69,1778
+        def __init__(70,1803
+        def get(73,1849
+        def set(76,1905
+        def __str__(79,1968
+    def __init__(82,2020
+    def __bool__(109,2818
+    def __str__(112,2878
+    def _get(116,2945
+    def get(121,3052
+    def set(124,3124
+def _generate(130,3291
+    def extract_calls(131,3309
+
+bibliopixel/control/artnet.py,98
+class ArtNet(8,150
+    def __init__(9,190
+    def _convert(15,441
+    def _make_thread(29,818
+
+bibliopixel/control/control.py,542
+class Control(10,290
+    def __init__(13,364
+    def set_project(33,1311
+    def start(37,1436
+    def stop(45,1646
+    def _receive(49,1743
+    def _convert(71,2425
+    def _make_thread(77,2570
+    def _msg_to_str(83,2706
+    def __bool__(88,2852
+class ControlLoop:ControlLoop92,2932
+    def _receive_all_messages(94,2994
+    def messages(100,3154
+    def _make_thread(104,3286
+class ExtractedControl(108,3396
+    def __init__(111,3449
+    def _convert(116,3641
+class ExtractedLoop(120,3715
+    def _make_thread(121,3767
+
+bibliopixel/control/editor.py,234
+class Editor(7,118
+    def __init__(17,439
+    def set_project(22,602
+    def receive(32,987
+    def get(43,1277
+    def set(46,1347
+    def __bool__(49,1413
+    def __str__(52,1472
+    def _get(55,1529
+    def _set(62,1744
+
+bibliopixel/control/envelope/envelope.py,556
+class Envelope:Envelope8,149
+    def __init__(9,165
+    def frequency(31,904
+    def frequency(35,983
+    def _call(38,1040
+    def __call__(41,1099
+class Linear(60,1770
+    def _call(61,1794
+class Sine(65,1837
+    def _call(66,1859
+class Triangular(70,1926
+    def _call(71,1954
+class Square(75,2027
+    def _call(76,2051
+class Random(80,2112
+    def _call(81,2136
+class Gaussian(85,2193
+    def __init__(86,2219
+    def _call(91,2359
+class Segments(95,2436
+    def __init__(96,2462
+    def _call(109,2975
+def _apply_skew(113,3077
+
+bibliopixel/control/envelope/segments.py,69
+class Segments(4,20
+    def __init__(8,93
+    def __call__(30,733
+
+bibliopixel/control/extractor.py,224
+class Extractor:Extractor4,21
+    def __init__(11,226
+        def to_set(41,1551
+        def make_match(48,1733
+    def extract(66,2407
+        def normal(68,2512
+        def odict(75,2715
+        def match(78,2814
+
+bibliopixel/control/gamepad.py,144
+class BaseGamePad(1,0
+    def __init__(2,27
+    def getKeys(5,65
+    def close(8,143
+    def setLights(11,178
+    def setLightsOff(14,223
+
+bibliopixel/control/keyboard.py,175
+    class Listener(29,502
+        def join(30,548
+def keyname(36,732
+class Keyboard(40,814
+    def _press(52,1053
+    def _release(55,1133
+    def _make_thread(58,1217
+
+bibliopixel/control/midi.py,71
+class Midi(23,413
+    def __init__(52,1502
+    def messages(62,1865
+
+bibliopixel/control/ops.py,304
+class Op:Op32,400
+    def __init__(33,410
+    def __call__(45,754
+    def __str__(48,822
+class Ops:Ops53,949
+    def __init__(54,960
+    def __call__(57,1032
+    def __bool__(62,1127
+    def __str__(65,1182
+def _make_ops(69,1258
+def _two_ops(86,1698
+    def add(87,1714
+def _join(101,2037
+
+bibliopixel/control/receiver.py,73
+class Receiver(4,13
+    def set_project(14,377
+    def receive(18,451
+
+bibliopixel/control/rest/decorator.py,84
+def single(10,287
+    def single(13,406
+def multi(40,1191
+    def multi(43,1311
+
+bibliopixel/control/rest/flask_server.py,181
+class OrderedFlask(9,199
+    class request_class(12,293
+class FlaskServer(16,395
+    def __init__(19,455
+    def run_once(26,729
+    def stop(32,947
+        def error(33,967
+
+bibliopixel/control/rest/rest.py,150
+class Rest(11,203
+    def __init__(15,332
+    def set_project(26,826
+    def cleanup(30,946
+    def _make_thread(34,1039
+class OpenPage(38,1101
+
+bibliopixel/control/rest/rest_server.py,303
+class RestServer:RestServer6,124
+    def __init__(7,142
+    def set_project(37,1294
+    def index(40,1362
+    def get(45,1477
+    def quoted_put(49,1560
+    def put(54,1719
+    def multi_get(59,1854
+    def multi_put(63,1951
+    def _get(67,2080
+    def _set(70,2170
+    def _abort(76,2324
+
+bibliopixel/control/routing.py,203
+class Routing(7,139
+    def __init__(12,232
+        def make(26,843
+    def set_project(40,1277
+        def visit(42,1361
+    def receive(53,1714
+    def __bool__(72,2309
+    def __str__(75,2368
+
+bibliopixel/control/serial_gamepad.py,364
+class CMDTYPE:CMDTYPE26,744
+class SerialPadError(33,825
+class SerialGamePad(37,869
+    def __init__(40,921
+    def cleanup(51,1261
+    def close(57,1454
+    def find_serial_devices(63,1609
+    def _printError(73,1990
+    def _comError(86,2482
+    def _connect(92,2665
+    def getKeys(124,3811
+    def setLights(151,4648
+    def setLightsOff(170,5239
+
+bibliopixel/drivers/artnet.py,144
+class ArtNet(6,142
+    def __init__(9,201
+    def _send_packet(22,770
+    def _copy_buffer_into_data(29,1002
+    def _on_positions(32,1095
+
+bibliopixel/drivers/channel_order.py,45
+class ChannelOrder(1,0
+    def make(17,331
+
+bibliopixel/drivers/curses.py,216
+class Curses(10,138
+    def __init__(30,754
+    def _send_packet(47,1298
+    def stop(50,1356
+    def main(55,1448
+    def run_in_curses(73,2071
+    def write_color(96,2737
+    def set_curses_colors(108,3217
+
+bibliopixel/drivers/driver_base.py,507
+class DriverBase(7,158
+    def construct(35,1018
+    def __init__(39,1175
+    def set_pixel_positions(70,2096
+    def set_colors(79,2317
+    def set_project(96,2802
+    def start(99,2874
+    def stop(105,3054
+    def cleanup(110,3164
+    def join(115,3289
+    def bufByteCount(120,3380
+    def sync(128,3637
+    def _compute_packet(139,3995
+    def _send_packet(145,4157
+    def update_colors(151,4293
+    def set_brightness(174,5099
+    def _render(183,5400
+    def _make_buffer(197,5982
+
+bibliopixel/drivers/dummy.py,74
+class Dummy(5,51
+    def __init__(8,142
+    def _compute_packet(19,443
+
+bibliopixel/drivers/hue.py,160
+class Hue(14,242
+    def __init__(25,569
+    def setTransitionTime(50,1424
+    def _mapRange(57,1652
+    def _rgb2hs(60,1798
+    def _send_packet(71,2087
+
+bibliopixel/drivers/ledtype.py,20
+class LEDTYPE(4,27
+
+bibliopixel/drivers/mirror.py,132
+class Mirror(7,85
+    def pre_recursion(9,129
+    def __init__(28,743
+        def forward(32,864
+            def method(33,891
+
+bibliopixel/drivers/movie_writer.py,134
+class MovieWriter(5,95
+    def __init__(10,228
+    def set_project(41,1503
+    def update_colors(45,1624
+    def cleanup(54,1886
+
+bibliopixel/drivers/network.py,203
+class CMDTYPE:CMDTYPE8,148
+class Network(14,249
+    def __init__(28,706
+    def _connect(35,917
+    def _compute_packet(46,1283
+    def _send_packet(53,1514
+    def set_device_brightness(71,1978
+
+bibliopixel/drivers/network_receiver.py,233
+class ThreadedDataHandler(9,163
+    def handle(11,224
+class ThreadedDataServer(72,2365
+class NetworkReceiver:NetworkReceiver78,2510
+    def __init__(80,2534
+    def start(88,2911
+    def stop(96,3187
+    def update(102,3339
+
+bibliopixel/drivers/network_udp.py,201
+class CMDTYPE:CMDTYPE8,148
+class NetworkUDP(14,249
+    def __init__(29,797
+    def _generateHeader(39,1167
+    def _connect(46,1356
+    def _compute_packet(60,1806
+    def _send_packet(67,2037
+
+bibliopixel/drivers/PiWS281X.py,148
+class PiWS281X(65,1377
+    def __init__(98,2542
+    def set_brightness(130,3836
+    def _compute_packet(134,3945
+    def _send_packet(140,4138
+
+bibliopixel/drivers/return_codes.py,119
+class RETURN_CODES:RETURN_CODES4,26
+class BiblioSerialError(26,876
+def print_error(30,923
+def raise_error(35,1051
+
+bibliopixel/drivers/serial/codes.py,20
+class CMDTYPE(5,58
+
+bibliopixel/drivers/serial/devices.py,235
+class Devices(10,294
+    def __init__(17,503
+    def find_serial_devices(21,623
+    def get_device(52,1764
+    def error(77,2633
+    def set_device_id(88,2937
+    def get_device_id(102,3421
+    def _get_device_version(113,3820
+
+bibliopixel/drivers/serial/driver.py,397
+class Serial(13,380
+    def __init__(32,1188
+    def cleanup(78,2782
+    def _connect(84,2959
+    def set_device_brightness(131,4873
+    def _send_packet(140,5171
+    def _compute_packet(155,5519
+    def _send_sync(163,5784
+    def _read(166,5850
+    def _close(169,5911
+    def _write(177,6132
+    def _flushInput(183,6321
+class TeensySmartMatrix(190,6512
+    def __init__(202,7007
+
+bibliopixel/drivers/serial/io.py,44
+def send_packet(6,97
+def read_byte(18,437
+
+bibliopixel/drivers/server_driver.py,252
+class ServerDriver(7,147
+    def __init__(8,192
+    def start(22,724
+    def stop_all(27,852
+    def set_pixel_positions(30,920
+    def _send_packet(37,1226
+    def _on_positions(40,1268
+    def cleanup(43,1311
+    def _compute_packet(48,1438
+
+bibliopixel/drivers/SimPixel/driver.py,199
+class SimPixelOpenerServer(9,165
+    def __init__(10,211
+class SimPixel(19,508
+    def open_browser(37,1106
+    def __init__(41,1286
+    def _on_positions(51,1670
+    def _send_packet(58,1949
+
+bibliopixel/drivers/SimPixel/SimpleWebSocketServer.py,771
+def _check_unicode(27,536
+class HTTPRequest(34,673
+    def __init__(36,719
+class WebSocket(77,1607
+    def __init__(79,1635
+    def handleMessage(113,2605
+    def handleConnected(123,2931
+    def handleClose(129,3073
+    def _handlePacket(135,3221
+    def _handleData(243,6990
+    def close(288,8718
+    def _sendBuffer(310,9472
+    def sendFragmentStart(335,10253
+    def sendFragment(349,10831
+    def sendFragmentEnd(358,11134
+    def sendMessage(367,11439
+    def _sendMessage(379,11845
+    def _parseMessage(414,12652
+class SimpleWebSocketServer(569,18032
+    def __init__(570,18070
+    def _decorateSocket(582,18619
+    def _constructWebSocket(585,18680
+    def close(588,18813
+    def _kill_client(595,18985
+    def serveforever(605,19271
+
+bibliopixel/drivers/SimPixel/websocket.py,414
+class Client(6,119
+    def __init__(10,232
+    def handleConnected(16,403
+    def handleClose(21,557
+    def handleMessage(26,708
+    def update(29,751
+class Server:Server39,1090
+    def __init__(40,1104
+    def stop(56,1644
+    def close(59,1695
+    def close(62,1748
+    def is_alive(65,1801
+    def target(68,1864
+    def update(76,2075
+    def add_client(81,2218
+    def remove_client(85,2322
+
+bibliopixel/drivers/SPI/APA102.py,117
+class APA102(6,100
+    def __init__(14,318
+    def set_device_brightness(30,1166
+    def _compute_packet(49,1955
+
+bibliopixel/drivers/SPI/base.py,109
+class SPIBase(7,146
+    def __init__(23,717
+    def _send_packet(39,1342
+    def _compute_packet(42,1421
+
+bibliopixel/drivers/SPI/driver.py,16
+def SPI(23,498
+
+bibliopixel/drivers/SPI/interfaces.py,466
+class SpiBaseInterface(8,115
+    def __init__(11,201
+    def send_packet(15,302
+    def compute_packet(19,402
+    def error(23,491
+class SpiFileInterface(31,711
+    def __init__(34,798
+    def send_packet(43,1060
+class SpiPeripheryInterface(53,1418
+    def __init__(56,1515
+    def send_packet(70,1999
+class SpiPyDevInterface(79,2330
+    def __init__(82,2414
+    def send_packet(115,3508
+class SpiDummyInterface(120,3611
+    def send_packet(123,3697
+
+bibliopixel/drivers/SPI/LPD8806.py,46
+class LPD8806(6,100
+    def __init__(14,322
+
+bibliopixel/drivers/SPI/WS2801.py,45
+class WS2801(8,179
+    def __init__(16,395
+
+bibliopixel/drivers/SPI/WS281X.py,79
+class WS281X(10,154
+    def __init__(19,383
+    def _compute_packet(35,1213
+
+bibliopixel/drivers/spi_interfaces.py,27
+class SPI_INTERFACES(4,27
+
+bibliopixel/drivers/text.py,75
+class Text(7,103
+    def __init__(10,178
+    def _compute_packet(21,510
+
+bibliopixel/layout/circle.py,292
+class Circle(8,197
+    def __init__(12,337
+    def lastRing(41,1383
+    def shape(46,1505
+    def __genOffsetFromAngle(50,1621
+    def angleToPixel(75,2254
+    def set(83,2480
+    def get(88,2647
+    def drawRadius(93,2822
+    def fillRing(101,3129
+        def pixelRange(108,3334
+
+bibliopixel/layout/cube.py,194
+class Cube(10,216
+    def __init__(13,292
+    def get_pixel_positions(34,1058
+    def shape(38,1169
+    def set(42,1263
+    def get(49,1441
+    def setHSV(56,1622
+    def setRGB(60,1734
+
+bibliopixel/layout/cutter.py,313
+class Cutter:Cutter6,70
+    def __init__(17,358
+    def apply(23,604
+class Slicer(35,949
+    def cut_row(42,1157
+    def cut_column(45,1257
+    def read(48,1336
+    def write(51,1405
+class Indexer(55,1484
+    def cut_row(61,1617
+    def cut_column(64,1712
+    def read(67,1805
+    def write(70,1881
+
+bibliopixel/layout/font.py,60
+def str_dim(679,27148
+def get_font_menu_options(710,27935
+
+bibliopixel/layout/geometry/circle.py,139
+def calc_ring_pixel_count(5,54
+def calc_ring_steps(12,159
+def make_circle_coord_map(19,278
+def make_circle_coord_map_positions(49,1137
+
+bibliopixel/layout/geometry/cube.py,72
+def make_cube_coord_map(5,84
+def make_cube_coord_map_positions(22,670
+
+bibliopixel/layout/geometry/index_ops.py,113
+def reflect_x(4,66
+def reflect_y(9,174
+def serpentine_x(14,281
+def serpentine_y(21,435
+def transpose(28,589
+
+bibliopixel/layout/geometry/matrix.py,319
+class Matrix(6,77
+    def __init__(9,147
+    def _index(33,1068
+    def get(42,1311
+    def set(45,1382
+def make_matrix_coord_map(49,1462
+def make_matrix_coord_map_multi(71,2032
+    def populate_config(75,2145
+    def add_row(78,2219
+    def combine_cols(84,2383
+def make_matrix_coord_map_positions(121,3569
+
+bibliopixel/layout/geometry/rotation.py,53
+def rotate_and_flip(4,27
+    class Rotation(17,343
+
+bibliopixel/layout/geometry/segment.py,199
+class Segment(4,22
+    def __init__(7,114
+    def __getitem__(18,445
+    def __setitem__(21,530
+    def __len__(24,623
+    def next(27,674
+    def _fix_index(31,854
+def make_segments(41,1180
+
+bibliopixel/layout/geometry/strip.py,230
+class Strip(4,13
+    def __getitem__(8,141
+    def __setitem__(13,268
+    def __len__(18,402
+def fill(22,440
+def make_strip_coord_map(33,757
+def make_strip_coord_map_multi(42,968
+def make_strip_coord_map_positions(55,1234
+
+bibliopixel/layout/layout.py,906
+class Layout(8,210
+    def construct(29,891
+    def __init__(35,1067
+    def set_pixel_positions(63,2128
+    def start(68,2295
+    def stop(72,2370
+    def join(77,2473
+    def cleanup_drivers(82,2597
+    def cleanup(86,2684
+    def clone(93,2897
+    def shape(103,3230
+    def dimensions(112,3509
+    def color_list(117,3627
+    def color_list(121,3705
+    def set_color_list(124,3784
+    def _get_base(143,4433
+    def _set_base(149,4608
+    def get_pixel_positions(157,4871
+    def push_to_driver(163,5029
+        def update(172,5292
+    def set_brightness(180,5557
+    def setRGB(186,5745
+    def setHSV(190,5901
+    def setOff(196,6092
+    def all_off(200,6198
+    def fill(205,6385
+    def fillRGB(214,6787
+    def fillHSV(219,7032
+class MultiLayout(224,7192
+    def __init__(227,7290
+    def gen_multi(239,7797
+    def set_colors(242,7872
+    def setBuffer(258,8489
+
+bibliopixel/layout/matrix.py,790
+class Matrix(18,455
+    def __init__(23,626
+    def shape(124,4549
+    def get(128,4650
+    def set(139,4971
+    def get_pixel_positions(146,5283
+    def loadFont(149,5382
+    def setTexture(156,5556
+    def __setNormal(179,6274
+    def __setScaled(186,6454
+    def _setColor(195,6762
+    def _setTexture(201,6911
+    def setHSV(208,7117
+    def setRGB(212,7218
+    def drawCircle(222,7618
+    def fillCircle(228,7815
+    def drawLine(234,8019
+    def bresenham_line(246,8532
+    def wu_line(255,8851
+    def drawRect(266,9319
+    def fillRect(275,9651
+    def fillScreen(285,10003
+    def drawRoundRect(289,10166
+    def fillRoundRect(299,10554
+    def drawTriangle(309,10942
+    def fillTriangle(318,11301
+    def drawChar(330,11740
+    def drawText(338,12069
+
+bibliopixel/layout/matrix_drawing.py,563
+def draw_circle(13,383
+def _draw_circle_helper(47,1173
+def _fill_circle_helper(79,1930
+def fill_circle(104,2613
+def draw_line(110,2859
+def bresenham_line(118,3106
+def wu_line(158,3921
+    def plot(161,4052
+    def ipart(170,4285
+    def fpart(173,4326
+    def rfpart(176,4378
+def _draw_fast_vline(236,5946
+def _draw_fast_hline(240,6062
+def draw_rect(244,6178
+def fill_rect(252,6524
+def draw_round_rect(258,6747
+def fill_round_rect(273,7520
+def draw_triangle(282,7936
+def fill_triangle(289,8216
+def draw_char(362,10151
+def draw_text(405,11713
+
+bibliopixel/layout/pov.py,49
+    class POV(6,134
+        def __init__(7,157
+
+bibliopixel/layout/strip.py,266
+class Strip(7,179
+    def __init__(10,279
+    def shape(40,1498
+    def get(44,1610
+    def set(48,1750
+    def _set_strip_mapped(57,2091
+    def _set(63,2308
+    def _setScaled(67,2422
+    def setRGB(73,2631
+    def setHSV(77,2781
+    def setOff(83,2966
+
+bibliopixel/layout/update_threading.py,610
+class UpdateDriverThread(6,102
+    def __init__(8,150
+    def update_colors(16,392
+    def sync(21,506
+    def sending(25,585
+    def run_once(28,643
+class UpdateThread(37,847
+    def __init__(39,889
+    def update_colors(53,1334
+    def run_once(60,1518
+class NoThreading(72,1747
+    def __init__(76,1802
+    def update_colors(80,1891
+    def wait_for_update(86,2048
+    def push_to_driver(89,2093
+class UseThreading(95,2242
+    def __init__(96,2275
+    def update_colors(101,2430
+    def wait_for_update(104,2503
+    def wait(108,2639
+    def stop(111,2694
+def UpdateThreading(115,2750
+
+bibliopixel/main/args.py,19
+def set_args(7,67
+
+bibliopixel/main/commands.py,23
+def print_help(27,419
+
+bibliopixel/main/demo_table.py,21
+def circle(170,4119
+
+bibliopixel/main/main.py,15
+def main(5,48
+
+bibliopixel/main/project_flags.py,153
+def add_arguments(13,354
+def _add_redundant_arguments(71,2214
+def _make_project_flags(109,3346
+    def get_value(110,3377
+def make_project(160,4925
+
+bibliopixel/project/aliases.py,86
+def get_alias(23,627
+def resolve(27,719
+    def get(30,785
+    def get_all(33,853
+
+bibliopixel/project/attributes.py,39
+def check(1,0
+def set_reserved(8,214
+
+bibliopixel/project/clock.py,89
+class Clock:Clock4,14
+    def __init__(5,27
+    def time(9,143
+    def sleep(12,227
+
+bibliopixel/project/construct.py,100
+def construct(5,52
+def to_type(16,424
+def to_type_constructor(31,724
+def construct_type(64,1627
+
+bibliopixel/project/data_maker.py,51
+class Maker:Maker19,523
+    def __init__(20,536
+
+bibliopixel/project/edit_queue.py,81
+class EditQueue(5,61
+    def put_edit(15,453
+    def get_and_run_edits(26,856
+
+bibliopixel/project/fields.py,101
+def type_converter(30,625
+    def converter(31,652
+def field_value(50,1099
+def component(61,1381
+
+bibliopixel/project/fill.py,286
+def fill(16,371
+def fill_layout(29,687
+def _fill_aliases(41,1102
+    def unalias(42,1127
+def _fill_colors(52,1374
+def _fill_palettes(57,1467
+def _fill_animation(72,1934
+def _fill_drivers(96,2739
+def _fill_shape(106,3027
+def _fill_numbers(160,4844
+def _fill_controls(168,5030
+
+bibliopixel/project/importer.py,130
+def _validate_typename(15,268
+def _import(29,736
+def import_symbol(47,1285
+def import_module(51,1376
+def make_object(55,1487
+
+bibliopixel/project/load.py,129
+def data(10,199
+def code(20,373
+def module(24,483
+def extender(28,583
+def load_if_filename(41,1065
+def _split_path(49,1308
+
+bibliopixel/project/merge.py,19
+def merge(36,1167
+
+bibliopixel/project/project.py,425
+class Project:Project11,292
+    def pre_recursion(16,423
+    def construct_child(19,484
+    def __init__(29,835
+        def create(36,1131
+            def post(37,1163
+        def cleanup_fn(65,2165
+    def __del__(92,3167
+    def start(95,3214
+    def stop(109,3535
+    def cleanup(124,3921
+    def join(135,4195
+    def run(143,4386
+    def flat_out(151,4565
+    def stop_all(155,4645
+def project(163,4820
+
+bibliopixel/project/project_runner.py,136
+def stop(17,374
+def run(23,452
+def _load_py(72,1632
+def _dump(96,2461
+def _get_projects(100,2555
+def _might_be_classname(223,6543
+
+bibliopixel/project/recurse.py,69
+def recurse(20,685
+      class being 28,1024
+    def call(39,1395
+
+bibliopixel/project/types/channel_order.py,45
+def make(27,396
+def _(34,540
+def _(40,668
+
+bibliopixel/project/types/direction.py,59
+def make(12,139
+def _(17,206
+def _(25,381
+def _(32,498
+
+bibliopixel/project/types/duration.py,45
+def make(17,291
+def _(22,403
+def _(29,524
+
+bibliopixel/project/types/gamma.py,73
+def make(18,486
+def _(23,598
+def _(28,656
+def _(37,842
+def _(42,902
+
+bibliopixel/project/types/int_name.py,17
+def make(10,208
+
+bibliopixel/project/types/ledtype.py,45
+def make(11,196
+def _(16,301
+def _(21,346
+
+bibliopixel/project/types/spi_interface.py,45
+def make(11,228
+def _(16,340
+def _(21,385
+
+bibliopixel/util/artnet_message.py,109
+def MessageClass(15,243
+    class DMXMessage(21,462
+def dmx_message(40,1004
+def bytes_to_message(78,1932
+
+bibliopixel/util/attribute_dict.py,174
+    class AttributeDict(4,69
+        def __init__(11,242
+        def __setattr__(16,431
+        def __eq__(21,582
+        def __ne__(24,667
+        def __bool__(27,752
+
+bibliopixel/util/class_name.py,20
+def class_name(1,0
+
+bibliopixel/util/color_list.py,463
+def is_numpy(5,47
+def check_numpy(9,106
+class ListMath:ListMath15,279
+    def clear(17,313
+    def add(23,490
+        def add(24,545
+    def copy(33,788
+    def scale(37,872
+    def sum(41,997
+class NumpyMath:NumpyMath45,1071
+    def clear(47,1106
+    def add(51,1179
+    def copy(58,1407
+    def scale(62,1519
+    def sum(66,1598
+def Math(70,1672
+class Mixer:Mixer74,1755
+    def __init__(75,1768
+    def clear(84,2107
+    def mix(87,2170
+
+bibliopixel/util/data_file.py,136
+def dumps(9,158
+def dump(31,736
+    def dump(42,1088
+def loads(60,1533
+    def fix(67,1719
+def load(79,2073
+def load_if(102,2647
+
+bibliopixel/util/deprecated.py,98
+def add_arguments(27,561
+def allowed(31,658
+def deprecated(36,725
+def _compute_action(54,1074
+
+bibliopixel/util/duration.py,71
+def _get_units(52,1075
+    def split_unit(57,1226
+def parse(81,1718
+
+bibliopixel/util/exception.py,33
+def add(5,58
+def report(19,411
+
+bibliopixel/util/flatten.py,107
+def flatten(1,0
+    def add(32,704
+    def recurse(37,844
+def unflatten(51,1212
+def canonical(88,1931
+
+bibliopixel/util/image/directory.py,63
+class Writer(4,20
+    def __init__(5,46
+    def write(9,171
+
+bibliopixel/util/image/extract_gif_lines.py,86
+def extract_gif_lines(12,200
+def _extract(23,513
+def _remove_common_prefix(53,1337
+
+bibliopixel/util/image/file_writer.py,128
+def file_writer(8,158
+class FileWriter:FileWriter17,424
+    def __init__(19,510
+    def step(29,856
+    def write(36,1100
+
+bibliopixel/util/image/gif.py,41
+class Writer(6,70
+    def _write(7,108
+
+bibliopixel/util/image/load_image.py,92
+def show_image(6,115
+def showImage(50,1445
+def loadImage(62,1864
+    def setter(72,2229
+
+bibliopixel/util/image/movie_writer.py,257
+class MovieWriter:MovieWriter17,290
+    def __init__(20,374
+    def set_project(44,1242
+    def step(51,1521
+    def cleanup(71,2072
+    def write(74,2133
+    def length(80,2267
+    def fps(84,2370
+    def fps(97,2627
+    def scaled_fps(101,2690
+
+bibliopixel/util/image/mp4.py,43
+class Writer(17,298
+    def write(18,336
+
+bibliopixel/util/image/old_gif.py,94
+def convert_mode(8,146
+def image_to_colorlist(15,354
+def animated_gif_to_colorlists(22,577
+
+bibliopixel/util/image/renderer.py,42
+def renderer(5,64
+    def render(32,922
+
+bibliopixel/util/image/reshape.py,34
+def crop(4,17
+def resize(15,420
+
+bibliopixel/util/image/yml.py,97
+class Writer:Writer11,172
+    def __init__(12,186
+    def step(19,456
+    def write(37,1079
+
+bibliopixel/util/int_names.py,83
+def to_index(11,141
+def to_names(24,439
+def _combine(28,494
+    def add(32,568
+
+bibliopixel/util/limit.py,123
+class Limit:Limit1,0
+    def __init__(2,13
+    def __bool__(18,624
+    def limit(21,715
+    def limit_colors(33,1064
+
+bibliopixel/util/log.py,366
+def add_arguments(14,385
+def apply_args(22,619
+def _addLoggingLevel(31,890
+    def logForLevel(72,2549
+    def logToRoot(76,2700
+def _new_custom_logger(85,2999
+    def add_handler(90,3195
+        class Filter(91,3232
+            def filter(92,3270
+def set_log_level(115,3832
+def get_log_level(128,4229
+def is_debug(132,4290
+    def setLogLevel(161,5152
+
+bibliopixel/util/log_errors.py,81
+class LogErrors:LogErrors4,38
+    def __init__(9,130
+    def __call__(24,714
+
+bibliopixel/util/offset_range.py,259
+class OffsetRange:OffsetRange6,46
+    def __init__(7,65
+    def full_range(23,711
+    def index(26,779
+    def read_from(38,1166
+    def copy_to(48,1584
+    def make(64,2049
+class MidiChannel(71,2175
+class MidiNote(76,2236
+class DMXChannel(81,2295
+
+bibliopixel/util/permutation.py,30
+def advance_permutation(4,18
+
+bibliopixel/util/persistent_dict.py,223
+class PersistentDict(5,36
+    def __init__(15,384
+    def clear(23,642
+    def pop(27,711
+    def popitem(31,788
+    def update(35,861
+    def __setitem__(39,960
+    def __delitem__(45,1172
+    def __write(49,1261
+
+bibliopixel/util/pid_context.py,70
+def add_arguments(8,191
+def pid_context(14,339
+def get_pid(39,1114
+
+bibliopixel/util/platform.py,86
+class Platform:Platform8,97
+    def __init__(9,113
+        def is_rpi_line(20,447
+
+bibliopixel/util/server_cache.py,378
+class StaticCache:StaticCache5,33
+    def cache(11,132
+    def close_all(17,294
+class ServerCache:ServerCache23,405
+    def __init__(34,811
+    def get_server(44,1146
+    def close(62,1686
+    def close_all(68,1835
+class _CachedServer:_CachedServer73,1936
+    def __init__(74,1957
+    def check_keywords(86,2358
+    def close(96,2738
+    def __getattr__(99,2773
+
+bibliopixel/util/signal_handler.py,187
+def context(15,380
+    def handler(18,423
+    def set_all(24,581
+def send_signal(37,883
+def run(61,1448
+def make_command(77,2012
+    def add_arguments(80,2109
+    def run(87,2356
+
+bibliopixel/util/threads/compose_events.py,105
+def compose_events(4,30
+    def changed(15,367
+    def add_changed(21,515
+        def wrapped(23,567
+
+bibliopixel/util/threads/producer_consumer.py,94
+class Queues(21,357
+    def __init__(22,379
+    def produce(30,601
+    def consume(36,726
+
+bibliopixel/util/threads/runnable.py,513
+class Runnable:Runnable5,85
+    def __init__(52,1567
+    def running(57,1693
+    def is_alive(66,1973
+    def start(75,2227
+    def stop(78,2278
+    def wait(81,2329
+    def cleanup(84,2381
+    def run(91,2529
+    def run_once(102,2814
+    def run_until_stop(107,2959
+class LoopThread(119,3226
+    def __init__(120,3254
+    def start(124,3406
+    def run(127,3456
+    def is_alive(131,3522
+class QueueHandler(135,3586
+    def __init__(136,3618
+    def run_once(142,3812
+    def send(150,3991
+
+bibliopixel/util/threads/sub.py,40
+def _run_locally(8,124
+def run(12,226
+
+bibliopixel/util/threads/task_thread.py,159
+class Task(5,55
+    def __init__(6,75
+    def run(10,214
+class TaskThread(19,421
+    def __init__(20,460
+    def produce(25,670
+    def run_once(28,745
+
+bibliopixel/util/threads/worker.py,274
+class Worker(13,215
+    def __init__(14,241
+    def run(20,399
+    def _increment_counter(32,847
+    def _log(37,994
+class Workers:Workers46,1279
+    def __init__(47,1294
+    def __enter__(52,1489
+    def __exit__(57,1588
+    def run(61,1701
+def work_on(65,1758
+
+bibliopixel/util/udp.py,367
+class Sender(11,179
+    def __init__(12,212
+    def send(19,408
+class QueuedSender(28,730
+    def __init__(37,956
+    def send(44,1173
+def sender(48,1230
+class Receiver(57,1542
+    def __init__(62,1633
+    def __str__(71,2031
+    def run_once(74,2135
+    def stop(88,2501
+class QueuedReceiver(96,2680
+    def __init__(101,2791
+    def receive(105,2906
+
+bibliopixel/util/util.py,210
+def generate_header(4,14
+def tuple_add(12,174
+def tuple_sub(16,243
+def tuple_mult(20,312
+def tuple_div(24,382
+def even_dist(28,451
+def pointOnCircle(36,661
+def genVector(58,1129
+    def length(70,1498
+
+bibliopixel/util/walk.py,39
+def walk(4,12
+def walk_suffix(14,254
+
+build/lib/bibliopixel/__init__.py,25
+def _get_version(19,681
+
+build/lib/bibliopixel/animation/adaptor.py,166
+def adapt_animation_layout(13,258
+            def adaptor(35,913
+            def adaptor(42,1132
+            def adaptor(49,1354
+            def adaptor(56,1572
+
+build/lib/bibliopixel/animation/animation.py,675
+class Animation(8,213
+    def construct(21,464
+    def __init__(43,1177
+    def set_project(60,1754
+    def _led(67,1954
+    def _led(72,2095
+    def color_list(76,2167
+    def color_list(80,2255
+    def completed(84,2336
+    def completed(89,2510
+    def pre_run(92,2621
+    def title(96,2672
+    def step(99,2733
+    def cleanup(102,2774
+    def add_preframe_callback(109,3027
+    def start(121,3462
+    def stop(124,3515
+    def join(127,3576
+    def run_all_frames(130,3648
+    def generate_frames(134,3737
+    def _run_one_frame(147,4151
+    def _pre_run(178,5174
+    def _set_runner(198,5716
+    def run(203,5911
+def _report_framerate(214,6148
+
+build/lib/bibliopixel/animation/animation_threading.py,301
+class AnimationThreading:AnimationThreading5,49
+    def __init__(11,187
+    def set_project(19,415
+    def join(23,518
+    def is_alive(26,603
+    def cleanup(29,682
+    def target(37,1015
+    def wait(43,1250
+    def start(60,1825
+        def start_thread(63,1879
+    def stopped(84,2437
+
+build/lib/bibliopixel/animation/circle.py,44
+class Circle(6,96
+    def __init__(10,182
+
+build/lib/bibliopixel/animation/collection.py,451
+class Collection(7,133
+    def pre_recursion(13,256
+    def __init__(71,2197
+    def cleanup(79,2511
+    def add_animation(85,2693
+    def pre_run(92,2903
+    def set_project(96,2985
+    def detach(101,3128
+class _AnimationList:_AnimationList114,3459
+    def __init__(115,3481
+    def _index(119,3636
+    def append(124,3768
+    def __getitem__(147,4557
+    def __getattr__(150,4636
+    def __iter__(153,4690
+    def __len__(156,4753
+
+build/lib/bibliopixel/animation/cube.py,41
+class Cube(5,63
+    def __init__(9,148
+
+build/lib/bibliopixel/animation/failed.py,44
+class Failed(6,67
+    def __init__(12,233
+
+build/lib/bibliopixel/animation/feedback.py,93
+class Feedback(6,75
+    def __init__(7,100
+    def step(26,793
+        def rotate(33,948
+
+build/lib/bibliopixel/animation/fill.py,62
+class Fill(5,63
+    def __init__(9,165
+    def step(18,510
+
+build/lib/bibliopixel/animation/game.py,244
+class Game(4,30
+    def __init__(6,51
+    def _exit(15,300
+    def setSpeed(20,475
+    def getSpeed(23,548
+    def _checkSpeed(26,617
+    def checkSpeed(29,697
+    def addKeyFunc(32,807
+    def handleKeys(44,1151
+    def step(65,1886
+
+build/lib/bibliopixel/animation/indexed.py,250
+class Indexed(5,62
+    def index(22,620
+    def index(29,787
+    def _on_index(34,948
+    def pre_run(45,1361
+    def step(49,1434
+    def forward(58,1666
+    def backward(61,1723
+    def animation(65,1795
+    def current_animation(74,2072
+
+build/lib/bibliopixel/animation/limiter.py,89
+class Limiter(6,87
+    def __init__(7,119
+    def pre_run(15,399
+    def step(19,501
+
+build/lib/bibliopixel/animation/matrix.py,43
+class Matrix(5,65
+    def __init__(9,160
+
+build/lib/bibliopixel/animation/mixer.py,109
+class Mixer(6,68
+    def __init__(7,100
+    def levels(17,388
+    def levels(21,463
+    def step(24,532
+
+build/lib/bibliopixel/animation/movie_writer.py,154
+class MovieWriter(5,80
+    def __init__(10,218
+    def set_project(40,1468
+    def step(44,1589
+    def set_project(49,1727
+    def cleanup(53,1848
+
+build/lib/bibliopixel/animation/off.py,61
+class Off(4,36
+    def __init__(7,128
+    def step(11,259
+
+build/lib/bibliopixel/animation/parallel.py,99
+class Parallel(4,27
+    def __init__(11,255
+    def generate_frames(20,552
+    def step(24,703
+
+build/lib/bibliopixel/animation/pov.py,63
+class POV(8,158
+    def __init__(9,178
+    def step(30,1129
+
+build/lib/bibliopixel/animation/receiver.py,216
+class HOST_TYPE(7,102
+class Receiver(22,326
+    def __init__(25,374
+    def pre_run(38,813
+    def start(41,858
+    def thread_cleanup(47,1082
+    def stop(51,1164
+    def _exit(56,1287
+    def step(59,1353
+
+build/lib/bibliopixel/animation/remote/control.py,348
+def normalize_name(24,541
+class RemoteControl(30,703
+    def pre_recursion(32,759
+    def __init__(83,2702
+    def cleanup(172,5887
+    def on_completion(181,6168
+    def run_animation(186,6296
+    def stop_animation(203,6838
+    def change_brightness(206,6911
+    def get_config(216,7181
+    def pre_run(224,7393
+    def step(229,7519
+
+build/lib/bibliopixel/animation/remote/opener.py,63
+def opener(7,86
+def raw_opener(18,347
+    def target(22,480
+
+build/lib/bibliopixel/animation/remote/server.py,286
+class RemoteServer:RemoteServer18,451
+    def __init__(19,471
+    def shutdown_server(27,726
+    def _set_routes(35,959
+    def index(43,1341
+    def static_files(47,1450
+    def run_animation(51,1576
+    def stop_animation(54,1674
+    def api(57,1747
+def run_server(78,2308
+
+build/lib/bibliopixel/animation/remote/trigger.py,81
+class TriggerBase:TriggerBase1,0
+    def __init__(2,19
+    def trigger(6,103
+
+build/lib/bibliopixel/animation/remote/trigger_process.py,22
+def run_trigger(4,31
+
+build/lib/bibliopixel/animation/reprocess/functions.py,17
+def sorter(4,47
+
+build/lib/bibliopixel/animation/reprocess/reprocess.py,162
+class MatrixIndexer:MatrixIndexer8,144
+    def __init__(11,200
+    def __call__(16,399
+class Reprocess(20,466
+    def __init__(21,500
+    def step(38,1039
+
+build/lib/bibliopixel/animation/runner.py,167
+class STATE(9,121
+class Runner(18,243
+    def __init__(20,266
+    def set_project(74,2056
+    def fps(80,2195
+    def fps(84,2266
+    def compute_state(87,2325
+
+build/lib/bibliopixel/animation/sequence.py,141
+class Sequence(6,70
+    def __init__(7,103
+    def restart(23,690
+    def pre_run(27,791
+    def step(32,888
+    def _on_index(44,1244
+
+build/lib/bibliopixel/animation/split.py,92
+class Split(12,197
+    def __init__(14,221
+    def step(31,946
+    def _foreach(42,1375
+
+build/lib/bibliopixel/animation/strip.py,42
+class Strip(5,64
+    def __init__(9,145
+
+build/lib/bibliopixel/animation/tests.py,363
+class StripChannelTest(11,298
+    def __init__(13,330
+    def step(18,467
+class MatrixChannelTest(26,660
+    def __init__(28,694
+    def step(33,878
+class MatrixCalibrationTest(45,1422
+    def __init__(47,1460
+    def step(53,1693
+class PixelTester(63,1970
+    def __init__(67,2027
+    def pre_run(71,2160
+    def step(74,2220
+    def steps(80,2356
+
+build/lib/bibliopixel/animation/wrapper.py,76
+class Wrapper(4,32
+    def pre_recursion(14,281
+    def animation(21,525
+
+build/lib/bibliopixel/colors/arithmetic.py,45
+def color_blend(1,0
+def color_scale(10,266
+
+build/lib/bibliopixel/colors/closest_colors.py,90
+def closest_colors(5,39
+def euclidean(19,421
+def taxicab(25,572
+def all_colors(30,679
+
+build/lib/bibliopixel/colors/colors.py,192
+class Colors:Colors4,23
+    def __getitem__(28,392
+    def __getattr__(34,537
+    def __setitem__(40,721
+    def __setattr__(43,809
+    def __iter__(46,903
+    def __contains__(49,969
+
+build/lib/bibliopixel/colors/conversions.py,429
+def hsv2rgb_raw(5,38
+def hsv2rgb_spectrum(63,1784
+def hsv2rgb_rainbow(70,1968
+    def nscale8x3_video(75,2151
+    def scale8_video_LEAVING_R1_DIRTY(87,2502
+def hsv2rgb_360(158,4319
+def hue2rgb_raw(176,4996
+def hue2rgb_rainbow(183,5151
+def hue2rgb_spectrum(190,5314
+def hue2rgb_360(197,5479
+def hue_gradient(208,5688
+def hue_helper(227,6160
+def hue_helper360(231,6266
+def rgb_to_hsv(235,6379
+def color_cmp(239,6462
+
+build/lib/bibliopixel/colors/gamma.py,84
+class Gamma(1,0
+    def __init__(6,88
+        def gam(19,547
+    def get(24,699
+
+build/lib/bibliopixel/colors/legacy_palette.py,29
+def pop_legacy_palette(4,21
+
+build/lib/bibliopixel/colors/make.py,244
+def color(7,96
+def _(12,211
+def _(24,488
+def _(29,559
+def _(37,737
+def colors(45,914
+def _(51,1072
+def _(57,1144
+def _(62,1200
+def _(67,1257
+def _(72,1322
+def to_triplets(76,1355
+def _colors(97,1860
+def colors_no_palette(111,2123
+
+build/lib/bibliopixel/colors/names.py,146
+def name_to_color(10,135
+    def to_color(18,478
+def color_to_name(48,1226
+def toggle(67,1785
+def _from_number(83,2387
+def to_color(92,2553
+
+build/lib/bibliopixel/colors/palette.py,172
+class Palette(5,47
+    def __init__(13,247
+    def __call__(53,1873
+    def get(56,1944
+    def __setitem__(119,3646
+    def __eq__(123,3761
+    def __ne__(128,3923
+
+build/lib/bibliopixel/colors/palettes.py,41
+def get(17,384
+def set_default(62,2258
+
+build/lib/bibliopixel/colors/printer.py,18
+def printer(5,46
+
+build/lib/bibliopixel/colors/tables.py,197
+def canonical_name(9,83
+def to_triplet(13,152
+def set_user_colors(19,265
+def get_color(31,541
+def get_name(36,655
+def all_named_colors(40,737
+def contains(48,979
+def _classic_pairs(58,1262
+
+build/lib/bibliopixel/colors/wheel.py,69
+def _gen_wheel(1,0
+def wheel_color(24,409
+def wheel_helper(31,604
+
+build/lib/bibliopixel/commands/all_pixel.py,117
+def get_input(27,665
+def get_int(31,716
+def _show_select_list(39,837
+def run(49,1087
+def add_arguments(112,3051
+
+build/lib/bibliopixel/commands/all_pixel_test.py,43
+def run(35,778
+def add_arguments(49,1091
+
+build/lib/bibliopixel/commands/animations.py,128
+def run(13,327
+def add_arguments(33,946
+def _animation_category(37,1008
+def _get_classes(50,1334
+def _canonicalize(78,1962
+
+build/lib/bibliopixel/commands/clear_cache.py,40
+def run(8,69
+def add_arguments(12,112
+
+build/lib/bibliopixel/commands/demo.py,99
+def make_runnable_animation(23,312
+def usage(51,1271
+def run(55,1347
+def add_arguments(76,1856
+
+build/lib/bibliopixel/commands/devices.py,43
+def run(11,171
+def add_arguments(53,1718
+
+build/lib/bibliopixel/commands/info.py,66
+def run(19,403
+def add_arguments(34,816
+def _dependency(38,878
+
+build/lib/bibliopixel/commands/monitor.py,42
+def run(10,103
+def add_arguments(25,452
+
+build/lib/bibliopixel/commands/new.py,43
+def run(26,471
+def add_arguments(62,1594
+
+build/lib/bibliopixel/commands/pid.py,42
+def run(20,231
+def add_arguments(29,453
+
+build/lib/bibliopixel/commands/run.py,42
+def run(10,157
+def add_arguments(15,280
+
+build/lib/bibliopixel/control/action.py,351
+class Action(7,115
+    def __init__(13,265
+    def set_project(17,375
+    def receive(20,454
+    def __bool__(30,803
+    def __str__(33,874
+    def make(39,1022
+        def root(50,1294
+class ActionList(54,1352
+    def __init__(57,1410
+    def set_project(62,1594
+    def receive(66,1697
+    def __bool__(71,1834
+    def __str__(74,1893
+
+build/lib/bibliopixel/control/address.py,690
+def number(34,1001
+class Address:Address41,1090
+    class Segment:Segment42,1105
+        def __init__(43,1124
+        def set(46,1188
+    class Attribute(49,1296
+        def get(50,1326
+        def _set(53,1400
+        def __str__(56,1482
+    class Index(59,1547
+        def get(60,1573
+        def _set(63,1638
+        def __str__(66,1712
+    class Call(69,1778
+        def __init__(70,1803
+        def get(73,1849
+        def set(76,1905
+        def __str__(79,1968
+    def __init__(82,2020
+    def __bool__(109,2818
+    def __str__(112,2878
+    def _get(116,2945
+    def get(121,3052
+    def set(124,3124
+def _generate(130,3291
+    def extract_calls(131,3309
+
+build/lib/bibliopixel/control/artnet.py,98
+class ArtNet(8,150
+    def __init__(9,190
+    def _convert(15,441
+    def _make_thread(29,818
+
+build/lib/bibliopixel/control/control.py,570
+class Control(10,290
+    def __init__(13,364
+    def set_project(33,1311
+    def start(38,1467
+    def stop(46,1677
+    def _receive(50,1774
+    def _convert(72,2456
+    def _make_thread(78,2601
+    def _msg_to_str(84,2737
+    def __bool__(89,2883
+        def root(96,3041
+class ControlLoop:ControlLoop100,3099
+    def _receive_all_messages(102,3161
+    def messages(108,3321
+    def _make_thread(112,3453
+class ExtractedControl(116,3563
+    def __init__(119,3616
+    def _convert(124,3808
+class ExtractedLoop(128,3882
+    def _make_thread(129,3934
+
+build/lib/bibliopixel/control/editor.py,260
+class Editor(6,103
+    def __init__(16,424
+    def set_project(21,587
+    def receive(33,982
+    def get(44,1272
+    def set(47,1342
+    def __bool__(50,1408
+    def __str__(53,1467
+    def _get(56,1524
+    def _set(62,1688
+        def root(70,1894
+
+build/lib/bibliopixel/control/envelope/envelope.py,556
+class Envelope:Envelope8,149
+    def __init__(9,165
+    def frequency(31,904
+    def frequency(35,983
+    def _call(38,1040
+    def __call__(41,1099
+class Linear(60,1770
+    def _call(61,1794
+class Sine(65,1837
+    def _call(66,1859
+class Triangular(70,1926
+    def _call(71,1954
+class Square(75,2027
+    def _call(76,2051
+class Random(80,2112
+    def _call(81,2136
+class Gaussian(85,2193
+    def __init__(86,2219
+    def _call(91,2359
+class Segments(95,2436
+    def __init__(96,2462
+    def _call(109,2975
+def _apply_skew(113,3077
+
+build/lib/bibliopixel/control/envelope/segments.py,69
+class Segments(4,20
+    def __init__(8,93
+    def __call__(30,733
+
+build/lib/bibliopixel/control/extractor.py,224
+class Extractor:Extractor4,21
+    def __init__(11,226
+        def to_set(41,1551
+        def make_match(48,1733
+    def extract(66,2407
+        def normal(68,2512
+        def odict(75,2715
+        def match(78,2814
+
+build/lib/bibliopixel/control/gamepad.py,144
+class BaseGamePad(1,0
+    def __init__(2,27
+    def getKeys(5,65
+    def close(8,143
+    def setLights(11,178
+    def setLightsOff(14,223
+
+build/lib/bibliopixel/control/keyboard.py,175
+    class Listener(29,502
+        def join(30,548
+def keyname(36,732
+class Keyboard(40,814
+    def _press(52,1053
+    def _release(55,1133
+    def _make_thread(58,1217
+
+build/lib/bibliopixel/control/midi.py,71
+class Midi(23,413
+    def __init__(52,1502
+    def messages(62,1865
+
+build/lib/bibliopixel/control/ops.py,304
+class Op:Op32,400
+    def __init__(33,410
+    def __call__(45,754
+    def __str__(48,822
+class Ops:Ops53,949
+    def __init__(54,960
+    def __call__(57,1032
+    def __bool__(62,1127
+    def __str__(65,1182
+def _make_ops(69,1258
+def _two_ops(86,1698
+    def add(87,1714
+def _join(101,2037
+
+build/lib/bibliopixel/control/receiver.py,73
+class Receiver(4,13
+    def set_project(14,377
+    def receive(18,451
+
+build/lib/bibliopixel/control/rest/decorator.py,84
+def single(10,287
+    def single(13,406
+def multi(40,1191
+    def multi(43,1311
+
+build/lib/bibliopixel/control/rest/flask_server.py,181
+class OrderedFlask(9,199
+    class request_class(12,293
+class FlaskServer(16,395
+    def __init__(19,455
+    def run_once(26,729
+    def stop(32,947
+        def error(33,967
+
+build/lib/bibliopixel/control/rest/rest.py,150
+class Rest(11,203
+    def __init__(15,332
+    def set_project(26,826
+    def cleanup(30,946
+    def _make_thread(34,1039
+class OpenPage(38,1101
+
+build/lib/bibliopixel/control/rest/rest_server.py,303
+class RestServer:RestServer6,124
+    def __init__(7,142
+    def set_project(37,1294
+    def index(40,1362
+    def get(45,1477
+    def quoted_put(49,1560
+    def put(54,1719
+    def multi_get(59,1854
+    def multi_put(63,1951
+    def _get(67,2080
+    def _set(70,2170
+    def _abort(76,2324
+
+build/lib/bibliopixel/control/rest/server.py,176
+class OrderedFlask(9,199
+    class request_class(12,293
+class Server(16,395
+    def __init__(19,450
+    def run_once(26,724
+    def stop(32,942
+        def error(33,962
+
+build/lib/bibliopixel/control/routing.py,229
+class Routing(7,139
+    def __init__(12,232
+        def make(26,843
+    def set_project(40,1277
+        def visit(42,1361
+    def receive(53,1714
+    def __bool__(72,2309
+    def __str__(75,2368
+        def root(82,2504
+
+build/lib/bibliopixel/control/serial_gamepad.py,364
+class CMDTYPE:CMDTYPE26,733
+class SerialPadError(33,814
+class SerialGamePad(37,858
+    def __init__(40,910
+    def cleanup(51,1250
+    def close(56,1398
+    def find_serial_devices(62,1553
+    def _printError(72,1934
+    def _comError(85,2426
+    def _connect(91,2609
+    def getKeys(123,3755
+    def setLights(150,4592
+    def setLightsOff(169,5183
+
+build/lib/bibliopixel/drivers/artnet.py,144
+class ArtNet(6,142
+    def __init__(9,201
+    def _send_packet(22,770
+    def _copy_buffer_into_data(29,1002
+    def _on_positions(32,1095
+
+build/lib/bibliopixel/drivers/channel_order.py,45
+class ChannelOrder(1,0
+    def make(17,331
+
+build/lib/bibliopixel/drivers/curses.py,216
+class Curses(10,138
+    def __init__(30,754
+    def _send_packet(47,1298
+    def stop(50,1356
+    def main(55,1448
+    def run_in_curses(73,2071
+    def write_color(96,2737
+    def set_curses_colors(108,3217
+
+build/lib/bibliopixel/drivers/driver_base.py,508
+class DriverBase(7,158
+    def construct(35,1018
+    def __init__(39,1175
+    def set_pixel_positions(71,2126
+    def set_colors(80,2347
+    def set_project(97,2832
+    def start(101,2933
+    def stop(107,3113
+    def cleanup(112,3223
+    def join(117,3348
+    def bufByteCount(122,3439
+    def sync(130,3696
+    def _compute_packet(141,4054
+    def _send_packet(147,4216
+    def update_colors(153,4352
+    def set_brightness(176,5146
+    def _render(185,5447
+    def _make_buffer(199,6029
+
+build/lib/bibliopixel/drivers/dummy.py,74
+class Dummy(5,51
+    def __init__(8,142
+    def _compute_packet(19,443
+
+build/lib/bibliopixel/drivers/hue.py,160
+class Hue(14,242
+    def __init__(25,569
+    def setTransitionTime(50,1424
+    def _mapRange(57,1652
+    def _rgb2hs(60,1798
+    def _send_packet(71,2087
+
+build/lib/bibliopixel/drivers/ledtype.py,20
+class LEDTYPE(4,27
+
+build/lib/bibliopixel/drivers/mirror.py,132
+class Mirror(7,85
+    def pre_recursion(9,129
+    def __init__(28,743
+        def forward(32,864
+            def method(33,891
+
+build/lib/bibliopixel/drivers/movie_writer.py,134
+class MovieWriter(5,95
+    def __init__(10,228
+    def set_project(41,1503
+    def update_colors(45,1624
+    def cleanup(52,1813
+
+build/lib/bibliopixel/drivers/network.py,203
+class CMDTYPE:CMDTYPE8,148
+class Network(14,249
+    def __init__(28,706
+    def _connect(35,917
+    def _compute_packet(46,1283
+    def _send_packet(53,1514
+    def set_device_brightness(71,1978
+
+build/lib/bibliopixel/drivers/network_receiver.py,233
+class ThreadedDataHandler(9,163
+    def handle(11,224
+class ThreadedDataServer(72,2365
+class NetworkReceiver:NetworkReceiver78,2510
+    def __init__(80,2534
+    def start(88,2911
+    def stop(96,3187
+    def update(102,3339
+
+build/lib/bibliopixel/drivers/network_udp.py,201
+class CMDTYPE:CMDTYPE8,148
+class NetworkUDP(14,249
+    def __init__(29,797
+    def _generateHeader(39,1167
+    def _connect(46,1356
+    def _compute_packet(60,1806
+    def _send_packet(67,2037
+
+build/lib/bibliopixel/drivers/PiWS281X.py,148
+class PiWS281X(65,1377
+    def __init__(98,2542
+    def set_brightness(130,3836
+    def _compute_packet(134,3945
+    def _send_packet(140,4138
+
+build/lib/bibliopixel/drivers/return_codes.py,119
+class RETURN_CODES:RETURN_CODES4,26
+class BiblioSerialError(26,876
+def print_error(30,923
+def raise_error(35,1051
+
+build/lib/bibliopixel/drivers/serial/codes.py,20
+class CMDTYPE(5,58
+
+build/lib/bibliopixel/drivers/serial/devices.py,235
+class Devices(10,294
+    def __init__(17,503
+    def find_serial_devices(21,623
+    def get_device(52,1764
+    def error(77,2633
+    def set_device_id(88,2937
+    def get_device_id(102,3421
+    def _get_device_version(113,3820
+
+build/lib/bibliopixel/drivers/serial/driver.py,397
+class Serial(13,369
+    def __init__(32,1177
+    def cleanup(78,2771
+    def _connect(86,2953
+    def set_device_brightness(133,4867
+    def _send_packet(142,5165
+    def _compute_packet(157,5513
+    def _send_sync(165,5778
+    def _read(168,5844
+    def _close(171,5905
+    def _write(179,6126
+    def _flushInput(185,6315
+class TeensySmartMatrix(192,6506
+    def __init__(204,7001
+
+build/lib/bibliopixel/drivers/serial/io.py,44
+def send_packet(6,97
+def read_byte(18,437
+
+build/lib/bibliopixel/drivers/server_driver.py,227
+class ServerDriver(6,117
+    def __init__(7,162
+    def start(21,694
+    def set_pixel_positions(25,805
+    def _send_packet(32,1111
+    def _on_positions(35,1153
+    def cleanup(38,1196
+    def _compute_packet(41,1264
+
+build/lib/bibliopixel/drivers/SimPixel/driver.py,194
+def open_browser(9,165
+class SimPixelOpenerServer(14,334
+    def __init__(15,380
+class SimPixel(24,668
+    def __init__(41,1248
+    def _on_positions(51,1632
+    def _send_packet(58,1911
+
+build/lib/bibliopixel/drivers/SimPixel/SimpleWebSocketServer.py,771
+def _check_unicode(27,536
+class HTTPRequest(34,673
+    def __init__(36,719
+class WebSocket(77,1607
+    def __init__(79,1635
+    def handleMessage(113,2605
+    def handleConnected(123,2931
+    def handleClose(129,3073
+    def _handlePacket(135,3221
+    def _handleData(243,6990
+    def close(288,8718
+    def _sendBuffer(310,9472
+    def sendFragmentStart(335,10253
+    def sendFragment(349,10831
+    def sendFragmentEnd(358,11134
+    def sendMessage(367,11439
+    def _sendMessage(379,11845
+    def _parseMessage(414,12652
+class SimpleWebSocketServer(569,18032
+    def __init__(570,18070
+    def _decorateSocket(582,18619
+    def _constructWebSocket(585,18680
+    def close(588,18813
+    def _kill_client(595,18985
+    def serveforever(605,19271
+
+build/lib/bibliopixel/drivers/SimPixel/websocket.py,414
+class Client(6,119
+    def __init__(10,232
+    def handleConnected(16,403
+    def handleClose(21,557
+    def handleMessage(26,708
+    def update(29,751
+class Server:Server39,1090
+    def __init__(40,1104
+    def stop(56,1644
+    def close(59,1695
+    def close(62,1748
+    def is_alive(65,1798
+    def target(68,1861
+    def update(76,2072
+    def add_client(81,2215
+    def remove_client(85,2319
+
+build/lib/bibliopixel/drivers/SPI/APA102.py,117
+class APA102(6,100
+    def __init__(14,318
+    def set_device_brightness(30,1166
+    def _compute_packet(49,1955
+
+build/lib/bibliopixel/drivers/SPI/base.py,109
+class SPIBase(7,146
+    def __init__(23,717
+    def _send_packet(39,1342
+    def _compute_packet(42,1421
+
+build/lib/bibliopixel/drivers/SPI/driver.py,16
+def SPI(23,498
+
+build/lib/bibliopixel/drivers/SPI/interfaces.py,466
+class SpiBaseInterface(8,115
+    def __init__(11,201
+    def send_packet(15,302
+    def compute_packet(19,402
+    def error(23,491
+class SpiFileInterface(31,711
+    def __init__(34,798
+    def send_packet(43,1060
+class SpiPeripheryInterface(53,1418
+    def __init__(56,1515
+    def send_packet(70,1999
+class SpiPyDevInterface(79,2330
+    def __init__(82,2414
+    def send_packet(115,3508
+class SpiDummyInterface(120,3611
+    def send_packet(123,3697
+
+build/lib/bibliopixel/drivers/SPI/LPD8806.py,46
+class LPD8806(6,100
+    def __init__(14,322
+
+build/lib/bibliopixel/drivers/SPI/WS2801.py,45
+class WS2801(8,179
+    def __init__(16,395
+
+build/lib/bibliopixel/drivers/SPI/WS281X.py,79
+class WS281X(10,154
+    def __init__(19,383
+    def _compute_packet(35,1213
+
+build/lib/bibliopixel/drivers/spi_interfaces.py,27
+class SPI_INTERFACES(4,27
+
+build/lib/bibliopixel/drivers/text.py,75
+class Text(7,103
+    def __init__(10,178
+    def _compute_packet(21,510
+
+build/lib/bibliopixel/layout/circle.py,292
+class Circle(8,197
+    def __init__(12,337
+    def lastRing(41,1383
+    def shape(46,1505
+    def __genOffsetFromAngle(50,1621
+    def angleToPixel(75,2254
+    def set(83,2480
+    def get(88,2647
+    def drawRadius(93,2822
+    def fillRing(101,3129
+        def pixelRange(108,3334
+
+build/lib/bibliopixel/layout/cube.py,194
+class Cube(10,216
+    def __init__(13,292
+    def get_pixel_positions(34,1058
+    def shape(38,1169
+    def set(42,1263
+    def get(49,1441
+    def setHSV(56,1622
+    def setRGB(60,1734
+
+build/lib/bibliopixel/layout/cutter.py,313
+class Cutter:Cutter6,70
+    def __init__(17,358
+    def apply(23,604
+class Slicer(35,949
+    def cut_row(42,1157
+    def cut_column(45,1257
+    def read(48,1336
+    def write(51,1405
+class Indexer(55,1484
+    def cut_row(61,1617
+    def cut_column(64,1712
+    def read(67,1805
+    def write(70,1881
+
+build/lib/bibliopixel/layout/font.py,60
+def str_dim(679,27148
+def get_font_menu_options(710,27935
+
+build/lib/bibliopixel/layout/geometry/circle.py,139
+def calc_ring_pixel_count(5,54
+def calc_ring_steps(12,159
+def make_circle_coord_map(19,278
+def make_circle_coord_map_positions(49,1137
+
+build/lib/bibliopixel/layout/geometry/cube.py,72
+def make_cube_coord_map(5,84
+def make_cube_coord_map_positions(22,670
+
+build/lib/bibliopixel/layout/geometry/index_ops.py,113
+def reflect_x(4,66
+def reflect_y(9,174
+def serpentine_x(14,281
+def serpentine_y(21,435
+def transpose(28,589
+
+build/lib/bibliopixel/layout/geometry/matrix.py,319
+class Matrix(6,77
+    def __init__(9,147
+    def _index(33,1068
+    def get(42,1311
+    def set(45,1382
+def make_matrix_coord_map(49,1462
+def make_matrix_coord_map_multi(71,2032
+    def populate_config(75,2145
+    def add_row(78,2219
+    def combine_cols(84,2383
+def make_matrix_coord_map_positions(121,3569
+
+build/lib/bibliopixel/layout/geometry/rotation.py,53
+def rotate_and_flip(4,27
+    class Rotation(17,343
+
+build/lib/bibliopixel/layout/geometry/segment.py,199
+class Segment(4,22
+    def __init__(7,114
+    def __getitem__(18,445
+    def __setitem__(21,530
+    def __len__(24,623
+    def next(27,674
+    def _fix_index(31,854
+def make_segments(41,1180
+
+build/lib/bibliopixel/layout/geometry/strip.py,230
+class Strip(4,13
+    def __getitem__(8,141
+    def __setitem__(13,268
+    def __len__(18,402
+def fill(22,440
+def make_strip_coord_map(33,757
+def make_strip_coord_map_multi(42,968
+def make_strip_coord_map_positions(55,1234
+
+build/lib/bibliopixel/layout/layout.py,906
+class Layout(8,199
+    def construct(29,880
+    def __init__(35,1056
+    def set_pixel_positions(62,2085
+    def start(67,2252
+    def stop(71,2327
+    def join(76,2430
+    def cleanup_drivers(81,2554
+    def cleanup(85,2641
+    def clone(93,2809
+    def shape(103,3142
+    def dimensions(112,3421
+    def color_list(117,3539
+    def color_list(121,3617
+    def set_color_list(124,3696
+    def _get_base(143,4345
+    def _set_base(149,4520
+    def get_pixel_positions(157,4783
+    def push_to_driver(163,4941
+        def update(172,5204
+    def set_brightness(180,5469
+    def setRGB(186,5657
+    def setHSV(190,5813
+    def setOff(196,6004
+    def all_off(200,6110
+    def fill(205,6297
+    def fillRGB(214,6699
+    def fillHSV(219,6944
+class MultiLayout(224,7104
+    def __init__(227,7202
+    def gen_multi(239,7709
+    def set_colors(242,7784
+    def setBuffer(258,8401
+
+build/lib/bibliopixel/layout/matrix.py,790
+class Matrix(18,455
+    def __init__(23,626
+    def shape(124,4549
+    def get(128,4650
+    def set(139,4971
+    def get_pixel_positions(146,5283
+    def loadFont(149,5382
+    def setTexture(156,5556
+    def __setNormal(179,6274
+    def __setScaled(186,6454
+    def _setColor(195,6762
+    def _setTexture(201,6911
+    def setHSV(208,7117
+    def setRGB(212,7218
+    def drawCircle(222,7618
+    def fillCircle(228,7815
+    def drawLine(234,8019
+    def bresenham_line(246,8532
+    def wu_line(255,8851
+    def drawRect(266,9319
+    def fillRect(275,9651
+    def fillScreen(285,10003
+    def drawRoundRect(289,10166
+    def fillRoundRect(299,10554
+    def drawTriangle(309,10942
+    def fillTriangle(318,11301
+    def drawChar(330,11740
+    def drawText(338,12069
+
+build/lib/bibliopixel/layout/matrix_drawing.py,563
+def draw_circle(13,383
+def _draw_circle_helper(47,1173
+def _fill_circle_helper(79,1930
+def fill_circle(104,2613
+def draw_line(110,2859
+def bresenham_line(118,3106
+def wu_line(158,3921
+    def plot(161,4052
+    def ipart(170,4285
+    def fpart(173,4326
+    def rfpart(176,4378
+def _draw_fast_vline(236,5946
+def _draw_fast_hline(240,6062
+def draw_rect(244,6178
+def fill_rect(252,6524
+def draw_round_rect(258,6747
+def fill_round_rect(273,7520
+def draw_triangle(282,7936
+def fill_triangle(289,8216
+def draw_char(362,10151
+def draw_text(405,11713
+
+build/lib/bibliopixel/layout/pov.py,49
+    class POV(6,134
+        def __init__(7,157
+
+build/lib/bibliopixel/layout/strip.py,266
+class Strip(7,179
+    def __init__(10,279
+    def shape(40,1498
+    def get(44,1610
+    def set(48,1750
+    def _set_strip_mapped(57,2091
+    def _set(63,2308
+    def _setScaled(67,2422
+    def setRGB(73,2631
+    def setHSV(77,2781
+    def setOff(83,2966
+
+build/lib/bibliopixel/layout/update_threading.py,610
+class UpdateDriverThread(6,102
+    def __init__(8,150
+    def update_colors(16,392
+    def sync(21,506
+    def sending(25,585
+    def run_once(28,643
+class UpdateThread(37,847
+    def __init__(39,889
+    def update_colors(53,1334
+    def run_once(60,1518
+class NoThreading(72,1747
+    def __init__(76,1802
+    def update_colors(80,1891
+    def wait_for_update(86,2048
+    def push_to_driver(89,2093
+class UseThreading(95,2242
+    def __init__(96,2275
+    def update_colors(101,2430
+    def wait_for_update(104,2503
+    def wait(108,2639
+    def stop(111,2694
+def UpdateThreading(115,2750
+
+build/lib/bibliopixel/main/all_pixel.py,111
+def get_input(27,665
+def get_int(31,716
+def showSelectList(39,837
+def run(49,1084
+def set_parser(112,3042
+
+build/lib/bibliopixel/main/all_pixel_test.py,40
+def run(35,778
+def set_parser(49,1091
+
+build/lib/bibliopixel/main/animations.py,124
+def run(13,302
+def set_parser(33,921
+def _animation_category(37,980
+def _get_classes(50,1306
+def _canonicalize(78,1934
+
+build/lib/bibliopixel/main/args.py,19
+def set_args(7,67
+
+build/lib/bibliopixel/main/clear_cache.py,37
+def run(8,69
+def set_parser(12,112
+
+build/lib/bibliopixel/main/color.py,37
+def run(8,87
+def set_parser(28,662
+
+build/lib/bibliopixel/main/commands.py,23
+def print_help(27,419
+
+build/lib/bibliopixel/main/common_flags.py,199
+def _get_version(8,190
+def add_common_flags(22,590
+def execute_args(37,1165
+def add_project_flags(44,1327
+def _make_project_flags(125,4002
+    def get_value(126,4033
+def make_project(179,5734
+
+build/lib/bibliopixel/main/deleted/list.py,37
+def run(8,80
+def set_parser(12,132
+
+build/lib/bibliopixel/main/deleted/load.py,37
+def run(8,78
+def set_parser(12,133
+
+build/lib/bibliopixel/main/deleted/remove.py,37
+def run(7,73
+def set_parser(11,130
+
+build/lib/bibliopixel/main/deleted/reset.py,39
+def run(20,249
+def set_parser(24,309
+
+build/lib/bibliopixel/main/deleted/save.py,37
+def run(8,88
+def set_parser(12,143
+
+build/lib/bibliopixel/main/deleted/set.py,39
+def run(20,246
+def set_parser(24,304
+
+build/lib/bibliopixel/main/deleted/show.py,37
+def run(8,76
+def set_parser(12,122
+
+build/lib/bibliopixel/main/deleted/update.py,37
+def run(9,97
+def set_parser(29,761
+
+build/lib/bibliopixel/main/demo.py,96
+def make_runnable_animation(23,324
+def usage(51,1282
+def run(55,1358
+def set_parser(76,1867
+
+build/lib/bibliopixel/main/demo_table.py,21
+def circle(166,3973
+
+build/lib/bibliopixel/main/devices.py,40
+def run(11,171
+def set_parser(53,1718
+
+build/lib/bibliopixel/main/info.py,63
+def run(19,403
+def set_parser(34,816
+def _dependency(38,875
+
+build/lib/bibliopixel/main/kill.py,23
+def set_parser(25,272
+
+build/lib/bibliopixel/main/main.py,15
+def main(5,48
+
+build/lib/bibliopixel/main/monitor.py,39
+def run(10,103
+def set_parser(25,452
+
+build/lib/bibliopixel/main/new.py,40
+def run(26,471
+def set_parser(62,1594
+
+build/lib/bibliopixel/main/pid.py,39
+def run(20,231
+def set_parser(29,453
+
+build/lib/bibliopixel/main/project_flags.py,153
+def add_arguments(13,354
+def _add_redundant_arguments(71,2214
+def _make_project_flags(109,3346
+    def get_value(110,3377
+def make_project(160,4925
+
+build/lib/bibliopixel/main/restart.py,39
+def run(26,370
+def set_parser(43,817
+
+build/lib/bibliopixel/main/run.py,214
+def _load_py(16,361
+def _dump(40,1190
+def _get_projects(44,1284
+def _run_projects(141,4609
+def run_once(181,5592
+def stop(194,5865
+def run(200,5943
+def set_parser(213,6351
+def _might_be_classname(240,6939
+
+build/lib/bibliopixel/main/shutdown.py,23
+def set_parser(21,246
+
+build/lib/bibliopixel/project/aliases.py,86
+def get_alias(23,627
+def resolve(27,719
+    def get(30,785
+    def get_all(33,853
+
+build/lib/bibliopixel/project/attributes.py,39
+def check(1,0
+def set_reserved(8,214
+
+build/lib/bibliopixel/project/builder.py,770
+class Builder:Builder13,360
+    def __init__(20,541
+    def save(36,1009
+    def load(41,1198
+    def start(47,1408
+    def stop(66,2081
+    def copy(90,2788
+    def clear(96,2997
+    def is_running(103,3188
+    def threaded(112,3408
+    def threaded(116,3500
+    def simpixel(120,3593
+    def animations(125,3778
+    def running_builder(130,3894
+    def __getattr__(134,4061
+    def __setattr__(139,4238
+    def __dir__(160,4928
+    def __repr__(163,5018
+    def __str__(173,5302
+    def __add__(176,5392
+    def __radd__(182,5499
+    def __iadd__(188,5607
+    def __copy__(201,5984
+    def __deepcopy__(204,6036
+    def _run_once(211,6277
+    def _load_save(224,6699
+    def _clear_description(241,7312
+    def _clean_description(249,7609
+
+build/lib/bibliopixel/project/construct.py,100
+def construct(5,52
+def to_type(16,424
+def to_type_constructor(31,724
+def construct_type(64,1627
+
+build/lib/bibliopixel/project/data_maker.py,51
+class Maker:Maker19,523
+    def __init__(20,536
+
+build/lib/bibliopixel/project/defaults.py,427
+def merge(15,403
+def show_defaults(27,726
+def reset_defaults(34,906
+def set_defaults(52,1301
+def load_defaults(61,1530
+def save_defaults(68,1708
+def remove_defaults(86,2182
+def list_saved_defaults(94,2364
+def set_project_defaults(104,2606
+def _check_sections(108,2702
+def _sections_to_assignments(123,3159
+def _warn_if_empty(159,4216
+def _defaults(165,4356
+def _default_file(171,4512
+def _load_defaults(175,4585
+
+build/lib/bibliopixel/project/edit_queue.py,81
+class EditQueue(5,61
+    def put_edit(15,453
+    def get_and_run_edits(26,856
+
+build/lib/bibliopixel/project/fields.py,101
+def type_converter(30,625
+    def converter(31,652
+def field_value(50,1099
+def component(61,1381
+
+build/lib/bibliopixel/project/fill.py,286
+def fill(16,371
+def fill_layout(29,687
+def _fill_aliases(41,1102
+    def unalias(42,1127
+def _fill_colors(52,1374
+def _fill_palettes(57,1467
+def _fill_animation(72,1934
+def _fill_drivers(96,2739
+def _fill_shape(106,3027
+def _fill_numbers(151,4491
+def _fill_controls(159,4677
+
+build/lib/bibliopixel/project/importer.py,130
+def _validate_typename(15,268
+def _import(29,736
+def import_symbol(47,1285
+def import_module(51,1376
+def make_object(55,1487
+
+build/lib/bibliopixel/project/load.py,129
+def data(10,199
+def code(20,373
+def module(24,483
+def extender(28,583
+def load_if_filename(41,1065
+def _split_path(49,1308
+
+build/lib/bibliopixel/project/merge.py,19
+def merge(36,1167
+
+build/lib/bibliopixel/project/project.py,530
+class Project:Project11,266
+    def pre_recursion(16,397
+    def construct_child(19,458
+    def __init__(29,809
+        def create(36,1105
+            def post(37,1137
+    def start(82,2911
+    def stop(96,3232
+    def cleanup(110,3598
+    def join(116,3749
+    def run(124,3940
+    def time(132,4119
+    def sleep(135,4173
+    def flat_out(139,4325
+    def stop_all(143,4416
+def project(151,4591
+class FlatOutClock:FlatOutClock177,5219
+    def __init__(178,5239
+    def time(181,5315
+    def sleep(184,5362
+
+build/lib/bibliopixel/project/project_runner.py,136
+def stop(17,374
+def run(23,452
+def _load_py(72,1632
+def _dump(96,2461
+def _get_projects(100,2555
+def _might_be_classname(223,6543
+
+build/lib/bibliopixel/project/recurse.py,69
+def recurse(20,685
+      class being 28,1024
+    def call(39,1395
+
+build/lib/bibliopixel/project/types/channel_order.py,45
+def make(27,396
+def _(34,540
+def _(40,668
+
+build/lib/bibliopixel/project/types/direction.py,59
+def make(12,139
+def _(17,206
+def _(25,381
+def _(32,498
+
+build/lib/bibliopixel/project/types/duration.py,45
+def make(17,291
+def _(22,403
+def _(29,524
+
+build/lib/bibliopixel/project/types/gamma.py,73
+def make(18,486
+def _(23,598
+def _(28,656
+def _(37,842
+def _(42,902
+
+build/lib/bibliopixel/project/types/int_name.py,17
+def make(10,208
+
+build/lib/bibliopixel/project/types/ledtype.py,45
+def make(11,196
+def _(16,301
+def _(21,346
+
+build/lib/bibliopixel/project/types/spi_interface.py,45
+def make(11,228
+def _(16,340
+def _(21,385
+
+build/lib/bibliopixel/util/artnet_message.py,109
+def MessageClass(15,243
+    class DMXMessage(21,462
+def dmx_message(40,1004
+def bytes_to_message(78,1932
+
+build/lib/bibliopixel/util/attribute_dict.py,174
+    class AttributeDict(4,69
+        def __init__(11,242
+        def __setattr__(16,431
+        def __eq__(21,582
+        def __ne__(24,667
+        def __bool__(27,752
+
+build/lib/bibliopixel/util/class_name.py,20
+def class_name(1,0
+
+build/lib/bibliopixel/util/color_list.py,463
+def is_numpy(5,47
+def check_numpy(9,106
+class ListMath:ListMath15,279
+    def clear(17,313
+    def add(23,490
+        def add(24,545
+    def copy(33,788
+    def scale(37,872
+    def sum(41,997
+class NumpyMath:NumpyMath45,1071
+    def clear(47,1106
+    def add(51,1179
+    def copy(58,1407
+    def scale(62,1519
+    def sum(66,1598
+def Math(70,1672
+class Mixer:Mixer74,1755
+    def __init__(75,1768
+    def clear(84,2107
+    def mix(87,2170
+
+build/lib/bibliopixel/util/colors/arithmetic.py,45
+def color_blend(1,0
+def color_scale(10,266
+
+build/lib/bibliopixel/util/colors/closest_colors.py,90
+def closest_colors(5,39
+def euclidean(19,421
+def taxicab(25,572
+def all_colors(30,679
+
+build/lib/bibliopixel/util/colors/conversions.py,429
+def hsv2rgb_raw(5,43
+def hsv2rgb_spectrum(63,1789
+def hsv2rgb_rainbow(70,1973
+    def nscale8x3_video(75,2156
+    def scale8_video_LEAVING_R1_DIRTY(87,2507
+def hsv2rgb_360(158,4324
+def hue2rgb_raw(176,5001
+def hue2rgb_rainbow(183,5156
+def hue2rgb_spectrum(190,5319
+def hue2rgb_360(197,5484
+def hue_gradient(208,5693
+def hue_helper(227,6160
+def hue_helper360(231,6266
+def rgb_to_hsv(235,6379
+def color_cmp(239,6462
+
+build/lib/bibliopixel/util/colors/gamma.py,84
+class Gamma(1,0
+    def __init__(6,88
+        def gam(19,547
+    def get(24,699
+
+build/lib/bibliopixel/util/colors/legacy_palette.py,29
+def pop_legacy_palette(4,21
+
+build/lib/bibliopixel/util/colors/make.py,245
+def color(7,103
+def _(12,218
+def _(24,495
+def _(29,566
+def _(37,744
+def colors(45,908
+def _(51,1066
+def _(57,1138
+def _(62,1194
+def _(67,1251
+def _(72,1316
+def to_triplets(76,1349
+def _colors(97,1854
+def colors_no_palette(111,2117
+
+build/lib/bibliopixel/util/colors/names.py,308
+def name_to_color(9,114
+    def to_color(17,457
+def color_to_name(44,1135
+def toggle(66,1723
+class _Colors(82,2325
+    def __getitem__(83,2348
+    def __getattr__(89,2483
+    def __call__(95,2657
+def _to_triplet(99,2726
+def _classic_pairs(105,2840
+def _from_number(117,3215
+def to_color(126,3381
+
+build/lib/bibliopixel/util/colors/palette.py,142
+class Palette(5,47
+    def __init__(13,247
+    def __call__(53,1873
+    def get(56,1944
+    def __eq__(119,3646
+    def __ne__(124,3808
+
+build/lib/bibliopixel/util/colors/palettes.py,41
+def get(17,401
+def set_default(62,2275
+
+build/lib/bibliopixel/util/colors/printer.py,18
+def printer(5,41
+
+build/lib/bibliopixel/util/colors/wheel.py,69
+def _gen_wheel(1,0
+def wheel_color(24,409
+def wheel_helper(31,604
+
+build/lib/bibliopixel/util/data_file.py,113
+def dumps(9,158
+def dump(29,643
+    def dump(40,995
+def loads(58,1440
+    def fix(65,1626
+def load(77,1980
+
+build/lib/bibliopixel/util/deprecated.py,98
+def add_arguments(27,561
+def allowed(31,658
+def deprecated(36,725
+def _compute_action(54,1074
+
+build/lib/bibliopixel/util/duration.py,71
+def _get_units(52,1075
+    def split_unit(57,1226
+def parse(81,1718
+
+build/lib/bibliopixel/util/exception.py,14
+def add(5,47
+
+build/lib/bibliopixel/util/flatten.py,107
+def flatten(1,0
+    def add(32,704
+    def recurse(37,844
+def unflatten(51,1212
+def canonical(88,1931
+
+build/lib/bibliopixel/util/image/directory.py,63
+class Writer(4,20
+    def __init__(5,46
+    def write(9,171
+
+build/lib/bibliopixel/util/image/extract_gif_lines.py,86
+def extract_gif_lines(12,200
+def _extract(23,513
+def _remove_common_prefix(53,1337
+
+build/lib/bibliopixel/util/image/file_writer.py,128
+def file_writer(8,158
+class FileWriter:FileWriter17,424
+    def __init__(19,510
+    def step(29,856
+    def write(36,1100
+
+build/lib/bibliopixel/util/image/gif.py,41
+class Writer(6,70
+    def _write(7,108
+
+build/lib/bibliopixel/util/image/gif_writer.py,133
+class GifWriter:GifWriter17,290
+    def __init__(20,372
+    def set_project(48,1478
+    def step(53,1644
+    def write(76,2340
+
+build/lib/bibliopixel/util/image/load_image.py,92
+def show_image(6,115
+def showImage(50,1445
+def loadImage(62,1864
+    def setter(72,2229
+
+build/lib/bibliopixel/util/image/movie_writer.py,231
+class MovieWriter:MovieWriter17,279
+    def __init__(20,363
+    def set_project(45,1253
+    def step(52,1524
+    def write(72,2083
+    def length(76,2152
+    def fps(80,2255
+    def fps(93,2512
+    def scaled_fps(97,2575
+
+build/lib/bibliopixel/util/image/mp4.py,43
+class Writer(17,298
+    def write(18,336
+
+build/lib/bibliopixel/util/image/old_gif.py,94
+def convert_mode(8,146
+def image_to_colorlist(15,354
+def animated_gif_to_colorlists(22,577
+
+build/lib/bibliopixel/util/image/renderer.py,42
+def renderer(5,64
+    def render(32,922
+
+build/lib/bibliopixel/util/image/reshape.py,34
+def crop(4,17
+def resize(15,420
+
+build/lib/bibliopixel/util/image/yml.py,97
+class Writer:Writer11,172
+    def __init__(12,186
+    def step(19,456
+    def write(37,1079
+
+build/lib/bibliopixel/util/int_names.py,83
+def to_index(11,141
+def to_names(24,439
+def _combine(28,494
+    def add(32,568
+
+build/lib/bibliopixel/util/limit.py,123
+class Limit:Limit1,0
+    def __init__(2,13
+    def __bool__(18,624
+    def limit(21,715
+    def limit_colors(33,1064
+
+build/lib/bibliopixel/util/log.py,366
+def add_arguments(11,260
+def apply_args(19,494
+def _addLoggingLevel(27,696
+    def logForLevel(68,2355
+    def logToRoot(72,2506
+def _new_custom_logger(81,2805
+    def add_handler(86,3001
+        class Filter(87,3038
+            def filter(88,3076
+def set_log_level(111,3638
+def get_log_level(124,4035
+def is_debug(128,4096
+    def setLogLevel(157,4958
+
+build/lib/bibliopixel/util/log_errors.py,81
+class LogErrors:LogErrors4,38
+    def __init__(9,130
+    def __call__(24,714
+
+build/lib/bibliopixel/util/offset_range.py,259
+class OffsetRange:OffsetRange6,46
+    def __init__(7,65
+    def full_range(23,711
+    def index(26,779
+    def read_from(38,1166
+    def copy_to(48,1584
+    def make(64,2049
+class MidiChannel(71,2175
+class MidiNote(76,2236
+class DMXChannel(81,2295
+
+build/lib/bibliopixel/util/permutation.py,30
+def advance_permutation(4,18
+
+build/lib/bibliopixel/util/persistent_dict.py,223
+class PersistentDict(5,36
+    def __init__(15,384
+    def clear(23,642
+    def pop(27,711
+    def popitem(31,788
+    def update(35,861
+    def __setitem__(39,960
+    def __delitem__(45,1172
+    def __write(49,1261
+
+build/lib/bibliopixel/util/pid_context.py,70
+def add_arguments(8,191
+def pid_context(14,339
+def get_pid(39,1114
+
+build/lib/bibliopixel/util/platform.py,86
+class Platform:Platform8,97
+    def __init__(9,113
+        def is_rpi_line(20,447
+
+build/lib/bibliopixel/util/server_cache.py,325
+class StaticCache:StaticCache5,33
+    def cache(11,132
+class ServerCache:ServerCache17,278
+    def __init__(28,684
+    def get_server(38,1019
+    def close(56,1559
+class _CachedServer:_CachedServer63,1709
+    def __init__(64,1730
+    def check_keywords(76,2131
+    def close(86,2511
+    def __getattr__(89,2546
+
+build/lib/bibliopixel/util/signal_handler.py,187
+def context(15,380
+    def handler(18,423
+    def set_all(24,581
+def send_signal(37,883
+def run(61,1448
+def make_command(77,2012
+    def add_arguments(80,2109
+    def run(87,2356
+
+build/lib/bibliopixel/util/threads/animation_threading.py,301
+class AnimationThreading:AnimationThreading5,44
+    def __init__(11,182
+    def set_project(19,410
+    def join(23,513
+    def is_alive(26,598
+    def cleanup(29,677
+    def target(37,1010
+    def wait(43,1245
+    def start(60,1820
+        def start_thread(63,1874
+    def stopped(84,2432
+
+build/lib/bibliopixel/util/threads/compose_events.py,105
+def compose_events(4,30
+    def changed(15,367
+    def add_changed(21,515
+        def wrapped(23,567
+
+build/lib/bibliopixel/util/threads/producer_consumer.py,94
+class Queues(21,357
+    def __init__(22,379
+    def produce(30,601
+    def consume(36,726
+
+build/lib/bibliopixel/util/threads/runnable.py,513
+class Runnable:Runnable5,85
+    def __init__(52,1567
+    def running(57,1693
+    def is_alive(66,1973
+    def start(75,2227
+    def stop(78,2278
+    def wait(81,2329
+    def cleanup(84,2381
+    def run(91,2529
+    def run_once(102,2814
+    def run_until_stop(107,2959
+class LoopThread(119,3226
+    def __init__(120,3254
+    def start(124,3406
+    def run(127,3456
+    def is_alive(131,3522
+class QueueHandler(135,3586
+    def __init__(136,3618
+    def run_once(142,3812
+    def send(150,3991
+
+build/lib/bibliopixel/util/threads/sub.py,40
+def _run_locally(8,124
+def run(12,226
+
+build/lib/bibliopixel/util/threads/task_thread.py,159
+class Task(5,55
+    def __init__(6,75
+    def run(10,214
+class TaskThread(19,421
+    def __init__(20,460
+    def produce(25,670
+    def run_once(28,745
+
+build/lib/bibliopixel/util/threads/update_threading.py,609
+class UpdateDriverThread(6,83
+    def __init__(8,131
+    def update_colors(17,402
+    def sync(22,516
+    def sending(26,595
+    def run_once(29,653
+class UpdateThread(38,857
+    def __init__(40,899
+    def update_colors(55,1373
+    def run_once(62,1557
+class NoThreading(74,1786
+    def __init__(78,1841
+    def update_colors(82,1930
+    def wait_for_update(88,2087
+    def push_to_driver(91,2132
+class UseThreading(97,2281
+    def __init__(98,2314
+    def update_colors(103,2469
+    def wait_for_update(106,2542
+    def wait(110,2678
+    def stop(113,2733
+def UpdateThreading(117,2789
+
+build/lib/bibliopixel/util/threads/worker.py,274
+class Worker(13,215
+    def __init__(14,241
+    def run(20,399
+    def _increment_counter(32,847
+    def _log(37,994
+class Workers:Workers46,1279
+    def __init__(47,1294
+    def __enter__(52,1489
+    def __exit__(57,1588
+    def run(61,1701
+def work_on(65,1758
+
+build/lib/bibliopixel/util/udp.py,367
+class Sender(11,179
+    def __init__(12,212
+    def send(19,408
+class QueuedSender(28,730
+    def __init__(37,956
+    def send(44,1173
+def sender(48,1230
+class Receiver(57,1542
+    def __init__(62,1633
+    def __str__(71,2031
+    def run_once(74,2135
+    def stop(88,2501
+class QueuedReceiver(96,2680
+    def __init__(101,2791
+    def receive(105,2906
+
+build/lib/bibliopixel/util/util.py,210
+def generate_header(4,14
+def tuple_add(12,174
+def tuple_sub(16,243
+def tuple_mult(20,312
+def tuple_div(24,382
+def even_dist(28,451
+def pointOnCircle(36,661
+def genVector(58,1129
+    def length(70,1498
+
+build/lib/bibliopixel/util/walk.py,39
+def walk(4,12
+def walk_suffix(14,254
+
+build/lib/test/bibliopixel/all_test.py,91
+class TestAll(7,128
+    def _test(8,162
+    def test_bp(23,680
+    def test_bpa(27,816
+
+build/lib/test/bibliopixel/animation/documentation_class.py,167
+class Example26(13,290
+    def __init__(14,328
+    def step(25,635
+    def pre_run(40,1081
+    def cleanup(44,1162
+class Example28(49,1275
+    def step(50,1303
+
+build/lib/test/bibliopixel/animation/reprocess/sorter_test.py,178
+def sorter(10,314
+class SorterTest(16,443
+    def test_empty(17,480
+    def test_one(20,548
+    def test_one(23,616
+    def test_sorted(26,686
+    def test_reverse(33,949
+
+build/lib/test/bibliopixel/colors/channel_order_test.py,107
+class ChannelOrderTest(7,103
+    def test_all(8,146
+    def test_index(21,650
+    def test_fail(28,842
+
+build/lib/test/bibliopixel/colors/closest_colors_test.py,170
+class ClosestColorsTest(8,119
+    def exhaustive(9,163
+    def test_simple(15,399
+    def test_far(18,492
+    def test_euclidean(25,770
+    def test_taxicab(29,895
+
+build/lib/test/bibliopixel/colors/color_test.py,230
+class ArithmeticTest(6,93
+    def test_color_blend(7,134
+    def test_color_scale(15,512
+class ClassicTest(23,918
+    def test_classic(24,956
+class NamesTest(48,1856
+    def test_colors(49,1892
+    def test_toggle(57,2236
+
+build/lib/test/bibliopixel/colors/gamma_test.py,57
+class GammaTest(8,117
+    def test_compatibility(9,153
+
+build/lib/test/bibliopixel/colors/legacy_palette_test.py,171
+class LegacyPaletteTest(7,183
+    def test_simple(8,227
+    def test_palette(14,389
+    def test_color(20,595
+    def test_colors(29,987
+    def test_errors(39,1430
+
+build/lib/test/bibliopixel/colors/names_test.py,167
+class NamesTest(7,127
+    def test_round_trip(8,163
+    def test_to_color(14,359
+    def test_name_to_color_error(26,825
+    def test_color_to_name_error(35,1150
+
+build/lib/test/bibliopixel/colors/palette_test.py,539
+class PaletteTest(9,200
+    def test_empty(10,238
+    def test_single(16,400
+    def test_get(22,562
+    def test_palette_setitem(40,1078
+    def test_get_serpentine(49,1348
+    def test_double(68,1901
+    def test_double_serpentine(91,2527
+    def test_discontinuous(111,3154
+    def test_discontinuous_serpentine(120,3442
+    def test_continuous(138,4029
+    def test_continuous_serpentine(163,4826
+    def test_scale(187,5613
+    def _print_result(200,6080
+    def test_autoscale(204,6238
+    def test_equality(216,6652
+
+build/lib/test/bibliopixel/colors/palettes_test.py,80
+class PalettesTest(8,160
+    def test_empty(9,199
+    def test_simple(12,284
+
+build/lib/test/bibliopixel/colors/tables_test.py,158
+class TablesTest(5,64
+    def test_simple(6,101
+    def test_new_colors(11,307
+    def test_override_colors(26,844
+    def test_all_named_colors(43,1518
+
+build/lib/test/bibliopixel/control/address_test.py,465
+class AddressTest(5,66
+    def test_empty(7,105
+    def test_attrib(16,408
+    def test_attrib_error(24,682
+    def test_array(32,912
+    def test_array_error(40,1166
+    def test_compound(51,1453
+    def call(62,1854
+    def test_trivial_call(65,1908
+    def test_call(73,2134
+    def call2(79,2325
+    def test_call_complex(82,2381
+    def test_compound_error(89,2619
+    def test_segment_start_with_index(102,2976
+    def test_assignment(107,3120
+
+build/lib/test/bibliopixel/control/artnet_test.py,238
+class ArtNetControlTest(9,231
+    def test_artnet_control(12,340
+    def test_artnet_integration(27,853
+    def offset_test(52,1831
+    def test_offset_positive(59,2117
+    def test_offset_negative(63,2256
+def make_project(68,2396
+
+build/lib/test/bibliopixel/control/editor_test.py,350
+class Base:Base6,117
+    class Foo:Foo7,129
+        def __init__(8,144
+    class Bar:Bar11,199
+        def __init__(12,214
+    class BarQ(15,277
+        def __init__(16,298
+    class Baz:Baz20,400
+        def __init__(21,415
+    def __init__(26,541
+class EditorTest(30,597
+    def test_no_queue(31,634
+    def test_with_queue(39,869
+
+build/lib/test/bibliopixel/control/envelope/envelope_test.py,512
+class EnvelopeTest(7,193
+    def test_identity(8,232
+    def test_disable(13,410
+    def test_offset_and_scale(18,575
+    def test_period(24,816
+    def test_symmetry(29,986
+    def test_sine(35,1235
+    def test_square(40,1402
+    def test_triangular(53,1854
+    def _random(59,2048
+    def test_random(77,2736
+    def test_gaussian(80,2828
+    def test_empty_segments(85,3069
+    def test_simple_segments(94,3285
+    def test_simple_segments2(101,3509
+    def test_decreasing_segments(108,3738
+
+build/lib/test/bibliopixel/control/envelope/segments_test.py,243
+class SegmentsTest(7,132
+    def test_empty_segments(8,171
+    def test_simple_segments(16,389
+    def test_simple_segments2(23,620
+    def test_decreasing_segments(30,856
+    def test_timed_segments(37,1087
+def function_tester(51,1578
+
+build/lib/test/bibliopixel/control/extractor_test.py,109
+class ExtractorTest(27,963
+    def run_test(28,1003
+    def test_one(36,1288
+    def test_accept(46,1570
+
+build/lib/test/bibliopixel/control/midi_test.py,381
+class FakeMido:FakeMido16,676
+    def __init__(17,692
+        def multi_port(18,722
+    def get_input_names(27,968
+        class Port(28,999
+            def name(29,1024
+    def open_input(34,1124
+class MidiTest(38,1172
+    def run_test(49,1415
+            class Root:Root51,1533
+    def test_one(62,1826
+    def test_accept(66,1955
+    def test_use_note_on(76,2268
+
+build/lib/test/bibliopixel/control/ops_test.py,209
+class OpsTest(5,63
+    def test_empty(7,98
+    def test_single(12,217
+    def test_two(18,394
+    def test_multi(31,724
+    def test_all(36,870
+    def test_error(43,1028
+        def raisesOps(44,1054
+
+build/lib/test/bibliopixel/drivers/artnet_test.py,264
+class DMXMessageTest(24,571
+    def test_blackout(28,703
+    def _make_driver_and_copy(58,1763
+    def test_big(64,2039
+    def test_little(68,2170
+    def test_big_offset(72,2304
+    def test_little_offset(76,2450
+    def test_big_offset_negative(82,2701
+
+build/lib/test/bibliopixel/drivers/driver_test.py,283
+class DriverTest(9,229
+    def do_test(17,422
+    def test_trivial(22,585
+    def test_simple(31,912
+    def test_permute(36,1077
+    def test_permute2(41,1269
+    def test_gamma1(46,1462
+    def test_apa102(51,1665
+    def test_lpd8806(56,1855
+    def test_ws2801(62,2084
+
+build/lib/test/bibliopixel/drivers/dummy_test.py,81
+def clock_only_project(7,122
+class DummyTest(11,214
+    def test_dummy(12,250
+
+build/lib/test/bibliopixel/drivers/serial/devices_test.py,54
+class DevicesTest(13,369
+    def test_serial(15,426
+
+build/lib/test/bibliopixel/drivers/serial/driver_test.py,84
+class DriverTest(8,215
+    def test_driver(11,376
+        def call_write(33,1155
+
+build/lib/test/bibliopixel/failure.py,20
+class Failure(4,28
+
+build/lib/test/bibliopixel/failure2.py,19
+class Failure(1,0
+
+build/lib/test/bibliopixel/import_all.py,69
+def _split_all(6,95
+def _all_imports(15,300
+def import_all(31,769
+
+build/lib/test/bibliopixel/layout/cutter_test.py,294
+class MockLayout:MockLayout5,56
+    def __init__(6,74
+    def get(12,251
+    def set(15,342
+class CutterTest(19,442
+    def assert_cut(20,479
+        def function(26,731
+    def test_get_row(35,1018
+    def test_get_column(38,1097
+class SlicerTest(42,1198
+class IndexerTest(46,1256
+
+build/lib/test/bibliopixel/layout/layout_matrix_test.py,142
+class MatrixTest(5,65
+    def test_simple(6,102
+    def test_transpose(14,382
+    def test_reflect(22,681
+    def test_serpentine(30,977
+
+build/lib/test/bibliopixel/layout/layout_test.py,368
+class MockDriver:MockDriver11,189
+    def __init__(12,207
+    def __getattr__(16,297
+class LayoutTest(20,396
+    def test_set_individual_colors(21,433
+    def test_set_color(29,705
+    def test_set_linear_color(35,923
+    def test_set_too_much_color(41,1150
+    def test_set_partial_color(47,1398
+    def test_set_offset(53,1641
+    def test_clone(59,1854
+
+build/lib/test/bibliopixel/layout/matrix_test.py,1381
+class BaseMatrixTest(20,527
+    def text_at(22,569
+    def line_at(26,701
+    def to_strings(29,805
+    def name_of_test(32,905
+    def dump(38,1078
+    def matrix_test(43,1192
+    def test_empty(57,1745
+    def test_horizontal_line(61,1826
+    def test_vertical_line(65,1949
+    def test_vertical_line2(69,2070
+    def test_draw_circle1(73,2192
+    def test_draw_circle2(77,2310
+    def test_draw_circle3(81,2433
+    def test_fill_circle1(85,2557
+    def test_fill_circle2(89,2675
+    def test_fill_circle3(93,2798
+    def test_bresenham0(97,2922
+    def test_bresenham1(101,3049
+    def test_bresenham2(105,3176
+    def test_bresenham3(109,3301
+    def test_wu0(113,3426
+    def test_wu1(117,3539
+    def test_wu2(121,3652
+    def test_wu3(125,3763
+    def test_draw_rect(129,3874
+    def test_fill_rect(133,3990
+    def test_fill_screen(137,4106
+    def DISABLED_test_draw_round_rect(141,4214
+    def DISABLED_test_fill_round_rect(145,4353
+    def test_draw_triangle(149,4492
+    def DISABLED_test_fill_triangle(153,4624
+    def test_draw_text(157,4765
+class MatrixTest(162,4889
+class SharedMatrixTest(166,4956
+class SharedMatrixIntegerTest(170,5062
+class FloatNumpyMatrixTest(174,5176
+class Uint8NumpyMatrixTest(178,5272
+class Int8NumpyMatrixTest(182,5368
+class DumpTest(186,5462
+    def dump(190,5542
+            def writeln(195,5657
+
+build/lib/test/bibliopixel/layout/segment_test.py,48
+class SegmentTest(5,66
+    def test_all(6,104
+
+build/lib/test/bibliopixel/main/demo_test.py,56
+class TestDemo(8,136
+    def test_demo_projects(9,171
+
+build/lib/test/bibliopixel/mark_tests.py,19
+def _check(10,205
+
+build/lib/test/bibliopixel/mock.py,227
+class MockFP(5,53
+    def __init__(6,75
+    def read(11,227
+    def write(14,294
+    def __iter__(21,497
+    def __enter__(24,568
+    def __exit__(27,614
+def mock_open(31,677
+    def open(32,704
+def patch_open(38,803
+
+build/lib/test/bibliopixel/patch.py,16
+def patch(6,88
+
+build/lib/test/bibliopixel/project/aliases_test.py,310
+def patch(9,157
+class AliasTest(13,252
+    def test_empty(14,288
+    def test_resolve(17,365
+    def test_preserve_separators(31,1072
+    def test_marker(35,1199
+    def test_marker_dollar(41,1390
+    def test_existence(47,1588
+    def test_additional_aliases(59,1938
+    def test_not_needed(64,2180
+
+build/lib/test/bibliopixel/project/bad_project_test.py,509
+class BadProjectTest(92,1543
+    def test_bad_project_json(94,1654
+    def test_bad_project_yaml(104,2012
+    def test_cant_open(111,2220
+    def test_bad_section(117,2435
+    def test_bad_section2(125,2670
+    def test_missing_datatype(134,2972
+    def test_bad_driver_attribute(142,3249
+    def test_bad_layout_attribute(150,3549
+    def test_bad_animation_attribute(158,3845
+    def test_bad_run_attribute(164,4092
+    def test_missing_layout(170,4317
+    def test_missing_everything(175,4544
+
+build/lib/test/bibliopixel/project/defaults_test.py,191
+class DefaultsTest(6,60
+    def run_test(7,99
+    def run_failure(11,249
+    def test_empty(15,409
+    def test_json(18,463
+    def test_sections1(22,583
+    def test_sections2(26,698
+
+build/lib/test/bibliopixel/project/fill_test.py,289
+def fill_before(23,594
+def fill_after(29,763
+class FillTest(35,930
+    def test_both(36,965
+    def test_drivers_empty(41,1146
+    def test_drivers_one(44,1229
+    def test_layout(49,1422
+    def test_1_dimension(77,2178
+    def test_2_shape(90,2603
+    def test_3_shape(99,2930
+
+build/lib/test/bibliopixel/project/import_failure_test.py,202
+class ImportFailureTest(69,1118
+    def test_bad_import_json(71,1232
+    def test_bad_import_yaml(76,1404
+    def test_failure1(82,1588
+    def test_failure2(87,1782
+    def test_failure3(93,2007
+
+build/lib/test/bibliopixel/project/importer_test.py,350
+class ImporterTest(9,185
+    def test_empty(10,224
+    def test_single(13,277
+    def test_failed_single(17,372
+    def test_double(21,494
+    def test_failed_double(25,598
+    def test_longer(35,897
+    def test_make_object(42,1146
+    def test_aliasing(47,1356
+    def test_exception_unknown(50,1449
+    def test_exception_known(57,1721
+
+build/lib/test/bibliopixel/project/load_test.py,84
+class LoadTest(6,87
+    def test_split_path(8,167
+    def test_split_path(16,476
+
+build/lib/test/bibliopixel/project/make.py,41
+def make_project(8,171
+def make(30,673
+
+build/lib/test/bibliopixel/project/merge_test.py,105
+class MergeTest(11,175
+    def test_empty(12,211
+    def test_single(15,282
+    def test_more(18,377
+
+build/lib/test/bibliopixel/project/project2_test.py,103
+def classname(9,251
+class Project2Test(13,317
+    def test_empty(14,356
+    def test_single(17,409
+
+build/lib/test/bibliopixel/project/project_test.py,753
+class ProjectTest(18,356
+    def test_bad_project_json(20,464
+    def test_bad_project_yaml(25,637
+    def test_simple(31,822
+    def test_types(34,872
+    def test_file(44,1314
+    def test_yaml_file(47,1401
+    def test_super(50,1492
+    def test_multi(55,1730
+    def test_shared(62,1997
+    def test_sequence(65,2054
+    def test_sub_animation_names(73,2400
+    def test_numpy(84,2882
+    def test_pixelwidth(87,2937
+    def test_aliases(90,3002
+    def test_simpixel(93,3061
+    def test_project_from_animation_class(98,3266
+    def test_nested_animation(102,3416
+    def test_nested_sequence(105,3510
+    def test_project_colors(108,3602
+    def test_test_example(118,4015
+class AnimationTest(397,8625
+    def step(407,8846
+
+build/lib/test/bibliopixel/project/recurse_test.py,196
+class Tester:Tester6,104
+    def post_recursion(8,136
+class RecurseTest(16,312
+    def test_empty(17,350
+    def test_trivial(20,427
+    def test_simple(25,581
+    def test_complex(31,869
+
+build/lib/test/bibliopixel/project/types/base.py,45
+class TypesBaseTest(5,57
+    def make(6,97
+
+build/lib/test/bibliopixel/project/types/channel_order_test.py,83
+class ChannelOrderTypesTest(5,81
+    def test_some(6,125
+        def test(7,150
+
+build/lib/test/bibliopixel/project/types/color_test.py,123
+class ColorTypesTest(6,110
+    def test_color_names(7,147
+    def test_color_numbers(15,418
+    def test_errors(26,785
+
+build/lib/test/bibliopixel/project/types/colors_test.py,161
+class ColorTypesTest(5,82
+    def test_empty(6,119
+    def test_single(9,189
+    def test_many(13,337
+    def test_1d_list(17,490
+    def test_dict(21,634
+
+build/lib/test/bibliopixel/project/types/direction_test.py,73
+class DirectionTest(4,35
+    def test_some(5,71
+        def test(6,96
+
+build/lib/test/bibliopixel/project/types/duration_test.py,54
+class DurationTypesTest(4,35
+    def test_some(5,75
+
+build/lib/test/bibliopixel/project/types/gamma_test.py,52
+class GammaTypesTest(5,72
+    def test_some(6,109
+
+build/lib/test/bibliopixel/project/types/ledtype_test.py,54
+class LEDTYPETypesTest(5,83
+    def test_some(6,122
+
+build/lib/test/bibliopixel/project/types/spi_interface_test.py,59
+class SpiInterfaceTypesTest(5,97
+    def test_some(6,141
+
+build/lib/test/bibliopixel/threads/compose_events_test.py,64
+class ComposeEventTest(6,82
+    def test_compose_events(7,125
+
+build/lib/test/bibliopixel/threads/producer_consumer_test.py,115
+class ProducerConsumerTest(6,99
+    def test_all(7,146
+        def producer(12,244
+        def consumer(22,554
+
+build/lib/test/bibliopixel/threads/sub_test.py,142
+def pause(8,122
+def run(12,169
+class SubTest(27,403
+    def do_test(28,437
+    def test_subprocess(39,848
+    def test_threading(42,907
+
+build/lib/test/bibliopixel/util/artnet_message_test.py,230
+class DMXMessageTest(6,83
+    def do_test(7,124
+    def test_blackout(19,565
+    def test_trivial(22,634
+    def test_ramp_and_a_half(25,693
+class Original:Original29,788
+    def __init__(30,804
+    def broadcast(37,1046
+
+build/lib/test/bibliopixel/util/attribute_dict_test.py,127
+    class AttributeDictTest(7,130
+        def test_simple(8,178
+        def test_single(13,316
+        def test_sub(22,556
+
+build/lib/test/bibliopixel/util/color_list_test.py,816
+def make_numpy(15,570
+class TestBase:TestBase19,634
+    def assert_list_equal(20,650
+class ColorListTest(36,1120
+    def test_simple(37,1170
+    def test_lists(46,1477
+    def test_numpy(54,1707
+    def test_clear_list(62,1960
+    def test_clear_numpy(71,2169
+    def test_copy_list(77,2349
+    def test_copy_numpy(82,2483
+    def test_sum_list(87,2640
+    def test_sum_numpy(90,2727
+    def test_scale_list(93,2828
+    def test_scale_numpy(103,3097
+class MixerTest(114,3378
+    def do_test(115,3424
+    def test_lists(152,4449
+    def test_numpy(157,4657
+class ToTripletsTest(165,4936
+    def test_simple(166,4977
+    def test_numpy(169,5061
+    def test_exact_count(173,5183
+    def test_overage(177,5303
+class CheckTest(191,5656
+    def test_works(192,5692
+    def test_fails(197,5825
+
+build/lib/test/bibliopixel/util/colors/closest_colors_test.py,170
+class ClosestColorsTest(8,119
+    def exhaustive(9,163
+    def test_simple(15,399
+    def test_far(18,492
+    def test_euclidean(25,770
+    def test_taxicab(29,895
+
+build/lib/test/bibliopixel/util/colors/legacy_palette_test.py,171
+class LegacyPaletteTest(7,183
+    def test_simple(8,227
+    def test_palette(14,389
+    def test_color(20,595
+    def test_colors(29,987
+    def test_errors(39,1430
+
+build/lib/test/bibliopixel/util/colors/names_test.py,167
+class NamesTest(7,127
+    def test_round_trip(8,163
+    def test_to_color(14,359
+    def test_name_to_color_error(26,825
+    def test_color_to_name_error(35,1150
+
+build/lib/test/bibliopixel/util/colors/palette_test.py,501
+class PaletteTest(9,200
+    def test_empty(10,238
+    def test_single(16,400
+    def test_get(22,562
+    def test_get_serpentine(40,1078
+    def test_double(59,1631
+    def test_double_serpentine(82,2257
+    def test_discontinuous(102,2884
+    def test_discontinuous_serpentine(111,3172
+    def test_continuous(129,3759
+    def test_continuous_serpentine(154,4556
+    def test_scale(178,5343
+    def _print_result(191,5810
+    def test_autoscale(195,5968
+    def test_equality(207,6382
+
+build/lib/test/bibliopixel/util/colors/palettes_test.py,80
+class PalettesTest(8,160
+    def test_empty(9,199
+    def test_simple(12,284
+
+build/lib/test/bibliopixel/util/data_file_test.py,138
+class DataFileTest(23,512
+    def test_yaml_keys(24,551
+    def test_round_trip_data_file(34,924
+    def test_round_trip_yaml(40,1142
+
+build/lib/test/bibliopixel/util/deprecated_test.py,55
+class DeprecatedTest(33,1001
+    def test_bp(35,1076
+
+build/lib/test/bibliopixel/util/duration_test.py,189
+class DurationTest(5,56
+    def test_simple(6,95
+    def test_simple_units(13,308
+    def test_simple_failure(20,610
+    def test_complex(39,1150
+    def test_complex_failure(47,1585
+
+build/lib/test/bibliopixel/util/flatten_test.py,232
+class FlattenTest(6,86
+    def assert_flatten(7,124
+    def assert_unflatten(12,374
+    def test_trivial(17,632
+    def test_simple(20,693
+    def test_three_levels(26,891
+    def test_mix(32,1148
+    def test_error(40,1522
+
+build/lib/test/bibliopixel/util/image/extract_gif_lines_test.py,128
+class ExtractGifLinesTest(6,103
+    def test_extract(7,149
+    def test_extract_gif_lines(11,283
+    def test_errors(15,436
+
+build/lib/test/bibliopixel/util/int_names_test.py,80
+class NamesTest(5,57
+    def test_to_index(6,93
+    def test_to_names(19,651
+
+build/lib/test/bibliopixel/util/limit_test.py,241
+class LimitTest(8,187
+    def test_default(9,223
+    def test_ratio(19,607
+    def test_knee(28,929
+    def test_knee_gain(39,1416
+    def test_knee_gain_disabled(51,1986
+    def test_colors(63,2383
+    def test_empty_colors(82,2976
+
+build/lib/test/bibliopixel/util/offset_range_test.py,230
+class OffsetRangeTest(5,60
+    def test_empty(6,102
+    def test_empty_copy(24,676
+    def test_positive_offset(35,964
+    def test_negative_offset(56,1782
+    def test_begin_end_offset(74,2409
+    def test_errors(105,3552
+
+build/lib/test/bibliopixel/util/permutation_test.py,125
+class PermutationTest(5,79
+    def test_permutation(6,121
+    def test_reverse(19,520
+    def test_right_to_left(42,1299
+
+build/lib/test/bibliopixel/util/persistent_dict_test.py,78
+class PersistentDictTest(12,194
+    def test_reader_writer_data_file(13,239
+
+build/lib/test/bibliopixel/util/udp_test.py,72
+def receive_udp(11,178
+class UDPTest(25,510
+    def test_full(27,576
+
+projects/strip1.py,80
+class Strip1(4,44
+    def step(5,83
+class Strip2(10,219
+    def step(11,258
+
+scripts/release_test/arguments.py,20
+def arguments(5,98
+
+scripts/release_test/common.py,114
+def prompt(10,143
+def test_prompt(15,220
+def execute(19,300
+def run_project(51,1212
+def make_project(58,1382
+
+scripts/release_test/features.py,254
+def get_all_pixel(17,523
+class Feature:Feature24,742
+    def keyboard(26,775
+    def all_pixel(30,853
+    def browser(34,930
+    def j12k(38,1003
+    def midi(42,1059
+    def windows(47,1180
+def check_features(54,1294
+def get_features(60,1453
+
+scripts/release_test/release_test.py,41
+def run_tests(14,282
+def _name(49,1322
+
+scripts/release_test/tests/all_pixel.py,16
+def run(10,190
+
+scripts/release_test/tests/bp.py,40
+def run(18,482
+    def printer(26,743
+
+scripts/release_test/tests/builder.py,76
+def run(10,224
+        def stop(21,503
+        def start_and_stop(25,572
+
+scripts/release_test/tests/classic.py,31
+def main(4,25
+def run(32,678
+
+scripts/release_test/tests/demo.py,14
+def run(4,16
+
+scripts/release_test/tests/j12k.py,14
+def run(4,23
+
+scripts/release_test/tests/keyboard.py,14
+def run(6,40
+
+scripts/release_test/tests/list.py,14
+def run(4,16
+
+scripts/release_test/tests/midi.py,14
+def run(7,93
+
+scripts/release_test/tests/new.py,31
+def run(7,85
+    def rm(8,96
+
+scripts/release_test/tests/remote.py,14
+def run(7,62
+
+scripts/release_test/tests/rest.py,134
+def get(14,322
+def put(18,430
+def bp(23,560
+    def wrapped(24,578
+def test_other(37,857
+def test_rest(49,1245
+def run(77,2074
+
+scripts/release_test/tests/simpixel.py,15
+def run(7,119
+
+scripts/release_test/tests/unit.py,14
+def run(4,16
+
+setup.py,243
+class InstallScripts(34,777
+    def run(35,816
+class RunTests(64,1848
+    def finalize_options(67,1901
+    def run_tests(72,2050
+class RunBenchmark(80,2260
+class RunCoverage(84,2320
+    def run_tests(85,2349
+def _get_version(102,2856
+
+test/bibliopixel/all_test.py,91
+class TestAll(7,128
+    def _test(8,162
+    def test_bp(23,680
+    def test_bpa(27,816
+
+test/bibliopixel/animation/documentation_class.py,167
+class Example26(13,290
+    def __init__(14,328
+    def step(25,635
+    def pre_run(40,1081
+    def cleanup(44,1162
+class Example28(49,1275
+    def step(50,1303
+
+test/bibliopixel/animation/reprocess/sorter_test.py,178
+def sorter(10,314
+class SorterTest(16,443
+    def test_empty(17,480
+    def test_one(20,548
+    def test_one(23,616
+    def test_sorted(26,686
+    def test_reverse(33,949
+
+test/bibliopixel/builder/builder_test.py,81
+class BuilderTest(6,111
+    def test_simple(7,149
+    def test_merging(15,330
+
+test/bibliopixel/builder/description_test.py,85
+class DescriptionTest(6,119
+    def test_empty(7,161
+    def test_setting(55,1424
+
+test/bibliopixel/colors/channel_order_test.py,107
+class ChannelOrderTest(7,103
+    def test_all(8,146
+    def test_index(21,650
+    def test_fail(28,842
+
+test/bibliopixel/colors/closest_colors_test.py,170
+class ClosestColorsTest(8,119
+    def exhaustive(9,163
+    def test_simple(15,399
+    def test_far(18,492
+    def test_euclidean(25,770
+    def test_taxicab(29,895
+
+test/bibliopixel/colors/color_test.py,230
+class ArithmeticTest(6,93
+    def test_color_blend(7,134
+    def test_color_scale(15,512
+class ClassicTest(23,918
+    def test_classic(24,956
+class NamesTest(48,1856
+    def test_colors(49,1892
+    def test_toggle(57,2236
+
+test/bibliopixel/colors/gamma_test.py,57
+class GammaTest(8,117
+    def test_compatibility(9,153
+
+test/bibliopixel/colors/legacy_palette_test.py,171
+class LegacyPaletteTest(7,183
+    def test_simple(8,227
+    def test_palette(14,389
+    def test_color(20,595
+    def test_colors(29,987
+    def test_errors(39,1430
+
+test/bibliopixel/colors/make_test.py,205
+class MakeTest(7,94
+    def test_color(8,129
+    def test_split_colors1(11,212
+    def test_split_colors2(17,452
+    def test_colors0(24,766
+    def test_colors1(30,976
+    def test_colors2(36,1216
+
+test/bibliopixel/colors/names_test.py,167
+class NamesTest(7,127
+    def test_round_trip(8,163
+    def test_to_color(14,359
+    def test_name_to_color_error(26,825
+    def test_color_to_name_error(35,1150
+
+test/bibliopixel/colors/palette_test.py,539
+class PaletteTest(9,200
+    def test_empty(10,238
+    def test_single(16,400
+    def test_get(22,562
+    def test_palette_setitem(40,1078
+    def test_get_serpentine(49,1348
+    def test_double(68,1901
+    def test_double_serpentine(91,2527
+    def test_discontinuous(111,3154
+    def test_discontinuous_serpentine(120,3442
+    def test_continuous(138,4029
+    def test_continuous_serpentine(163,4826
+    def test_scale(187,5613
+    def _print_result(200,6080
+    def test_autoscale(204,6238
+    def test_equality(216,6652
+
+test/bibliopixel/colors/palettes_test.py,80
+class PalettesTest(8,160
+    def test_empty(9,199
+    def test_simple(12,284
+
+test/bibliopixel/colors/tables_test.py,158
+class TablesTest(5,64
+    def test_simple(6,101
+    def test_new_colors(11,307
+    def test_override_colors(26,844
+    def test_all_named_colors(43,1518
+
+test/bibliopixel/commands/demo_test.py,56
+class TestDemo(8,136
+    def test_demo_projects(9,171
+
+test/bibliopixel/control/address_test.py,465
+class AddressTest(5,66
+    def test_empty(7,105
+    def test_attrib(16,408
+    def test_attrib_error(24,682
+    def test_array(32,912
+    def test_array_error(40,1166
+    def test_compound(51,1453
+    def call(62,1854
+    def test_trivial_call(65,1908
+    def test_call(73,2134
+    def call2(79,2325
+    def test_call_complex(82,2381
+    def test_compound_error(89,2619
+    def test_segment_start_with_index(102,2976
+    def test_assignment(107,3120
+
+test/bibliopixel/control/artnet_test.py,238
+class ArtNetControlTest(9,231
+    def test_artnet_control(12,340
+    def test_artnet_integration(27,853
+    def offset_test(52,1831
+    def test_offset_positive(59,2117
+    def test_offset_negative(63,2256
+def make_project(68,2396
+
+test/bibliopixel/control/editor_test.py,350
+class Base:Base6,117
+    class Foo:Foo7,129
+        def __init__(8,144
+    class Bar:Bar11,199
+        def __init__(12,214
+    class BarQ(15,277
+        def __init__(16,298
+    class Baz:Baz20,400
+        def __init__(21,415
+    def __init__(26,541
+class EditorTest(30,597
+    def test_no_queue(31,634
+    def test_with_queue(39,869
+
+test/bibliopixel/control/envelope/envelope_test.py,512
+class EnvelopeTest(7,193
+    def test_identity(8,232
+    def test_disable(13,410
+    def test_offset_and_scale(18,575
+    def test_period(24,816
+    def test_symmetry(29,986
+    def test_sine(35,1235
+    def test_square(40,1402
+    def test_triangular(53,1854
+    def _random(59,2048
+    def test_random(77,2736
+    def test_gaussian(80,2828
+    def test_empty_segments(85,3069
+    def test_simple_segments(94,3285
+    def test_simple_segments2(101,3509
+    def test_decreasing_segments(108,3738
+
+test/bibliopixel/control/envelope/segments_test.py,243
+class SegmentsTest(7,132
+    def test_empty_segments(8,171
+    def test_simple_segments(16,389
+    def test_simple_segments2(23,620
+    def test_decreasing_segments(30,856
+    def test_timed_segments(37,1087
+def function_tester(51,1578
+
+test/bibliopixel/control/extractor_test.py,109
+class ExtractorTest(27,963
+    def run_test(28,1003
+    def test_one(36,1288
+    def test_accept(46,1570
+
+test/bibliopixel/control/midi_test.py,381
+class FakeMido:FakeMido16,676
+    def __init__(17,692
+        def multi_port(18,722
+    def get_input_names(27,968
+        class Port(28,999
+            def name(29,1024
+    def open_input(34,1124
+class MidiTest(38,1172
+    def run_test(49,1415
+            class Root:Root51,1533
+    def test_one(62,1826
+    def test_accept(66,1955
+    def test_use_note_on(76,2268
+
+test/bibliopixel/control/ops_test.py,209
+class OpsTest(5,63
+    def test_empty(7,98
+    def test_single(12,217
+    def test_two(18,394
+    def test_multi(31,724
+    def test_all(36,870
+    def test_error(43,1028
+        def raisesOps(44,1054
+
+test/bibliopixel/drivers/artnet_test.py,264
+class DMXMessageTest(24,571
+    def test_blackout(28,703
+    def _make_driver_and_copy(58,1763
+    def test_big(64,2039
+    def test_little(68,2170
+    def test_big_offset(72,2304
+    def test_little_offset(76,2450
+    def test_big_offset_negative(82,2701
+
+test/bibliopixel/drivers/driver_test.py,283
+class DriverTest(9,229
+    def do_test(17,422
+    def test_trivial(22,585
+    def test_simple(31,912
+    def test_permute(36,1077
+    def test_permute2(41,1269
+    def test_gamma1(46,1462
+    def test_apa102(51,1665
+    def test_lpd8806(56,1855
+    def test_ws2801(62,2084
+
+test/bibliopixel/drivers/dummy_test.py,81
+def clock_only_project(8,160
+class DummyTest(12,239
+    def test_dummy(13,275
+
+test/bibliopixel/drivers/serial/devices_test.py,54
+class DevicesTest(13,369
+    def test_serial(15,426
+
+test/bibliopixel/drivers/serial/driver_test.py,84
+class DriverTest(8,215
+    def test_driver(11,376
+        def call_write(33,1155
+
+test/bibliopixel/failure.py,20
+class Failure(4,28
+
+test/bibliopixel/failure2.py,19
+class Failure(1,0
+
+test/bibliopixel/import_all.py,69
+def _split_all(6,95
+def _all_imports(15,300
+def import_all(31,769
+
+test/bibliopixel/layout/cutter_test.py,294
+class MockLayout:MockLayout5,56
+    def __init__(6,74
+    def get(12,251
+    def set(15,342
+class CutterTest(19,442
+    def assert_cut(20,479
+        def function(26,731
+    def test_get_row(35,1018
+    def test_get_column(38,1097
+class SlicerTest(42,1198
+class IndexerTest(46,1256
+
+test/bibliopixel/layout/layout_matrix_test.py,142
+class MatrixTest(5,65
+    def test_simple(6,102
+    def test_transpose(14,382
+    def test_reflect(22,681
+    def test_serpentine(30,977
+
+test/bibliopixel/layout/layout_test.py,368
+class MockDriver:MockDriver11,189
+    def __init__(12,207
+    def __getattr__(16,297
+class LayoutTest(20,396
+    def test_set_individual_colors(21,433
+    def test_set_color(29,705
+    def test_set_linear_color(35,923
+    def test_set_too_much_color(41,1150
+    def test_set_partial_color(47,1398
+    def test_set_offset(53,1641
+    def test_clone(59,1854
+
+test/bibliopixel/layout/matrix_test.py,1381
+class BaseMatrixTest(20,527
+    def text_at(22,569
+    def line_at(26,701
+    def to_strings(29,805
+    def name_of_test(32,905
+    def dump(38,1078
+    def matrix_test(43,1192
+    def test_empty(57,1745
+    def test_horizontal_line(61,1826
+    def test_vertical_line(65,1949
+    def test_vertical_line2(69,2070
+    def test_draw_circle1(73,2192
+    def test_draw_circle2(77,2310
+    def test_draw_circle3(81,2433
+    def test_fill_circle1(85,2557
+    def test_fill_circle2(89,2675
+    def test_fill_circle3(93,2798
+    def test_bresenham0(97,2922
+    def test_bresenham1(101,3049
+    def test_bresenham2(105,3176
+    def test_bresenham3(109,3301
+    def test_wu0(113,3426
+    def test_wu1(117,3539
+    def test_wu2(121,3652
+    def test_wu3(125,3763
+    def test_draw_rect(129,3874
+    def test_fill_rect(133,3990
+    def test_fill_screen(137,4106
+    def DISABLED_test_draw_round_rect(141,4214
+    def DISABLED_test_fill_round_rect(145,4353
+    def test_draw_triangle(149,4492
+    def DISABLED_test_fill_triangle(153,4624
+    def test_draw_text(157,4765
+class MatrixTest(162,4889
+class SharedMatrixTest(166,4956
+class SharedMatrixIntegerTest(170,5062
+class FloatNumpyMatrixTest(174,5176
+class Uint8NumpyMatrixTest(178,5272
+class Int8NumpyMatrixTest(182,5368
+class DumpTest(186,5462
+    def dump(190,5542
+            def writeln(195,5657
+
+test/bibliopixel/layout/segment_test.py,48
+class SegmentTest(5,66
+    def test_all(6,104
+
+test/bibliopixel/leak_test.py,183
+class TestLeaks(6,114
+    def test_leaks(7,150
+        def _get_items(8,176
+def _pause(25,686
+def _builder_simple(29,722
+def _builder_project(36,848
+def _project_simple(41,933
+
+test/bibliopixel/mark_tests.py,19
+def _check(10,205
+
+test/bibliopixel/mock.py,227
+class MockFP(5,53
+    def __init__(6,75
+    def read(11,227
+    def write(14,294
+    def __iter__(21,497
+    def __enter__(24,568
+    def __exit__(27,614
+def mock_open(31,677
+    def open(32,704
+def patch_open(38,803
+
+test/bibliopixel/patch.py,16
+def patch(6,88
+
+test/bibliopixel/project/aliases_test.py,310
+def patch(9,157
+class AliasTest(13,252
+    def test_empty(14,288
+    def test_resolve(17,365
+    def test_preserve_separators(31,1072
+    def test_marker(35,1199
+    def test_marker_dollar(41,1390
+    def test_existence(47,1588
+    def test_additional_aliases(59,1938
+    def test_not_needed(64,2180
+
+test/bibliopixel/project/bad_project_test.py,509
+class BadProjectTest(92,1543
+    def test_bad_project_json(94,1654
+    def test_bad_project_yaml(104,2012
+    def test_cant_open(111,2220
+    def test_bad_section(117,2435
+    def test_bad_section2(125,2670
+    def test_missing_datatype(134,2972
+    def test_bad_driver_attribute(142,3249
+    def test_bad_layout_attribute(150,3549
+    def test_bad_animation_attribute(158,3845
+    def test_bad_run_attribute(164,4092
+    def test_missing_layout(170,4317
+    def test_missing_everything(175,4544
+
+test/bibliopixel/project/fill_test.py,326
+def fill_before(24,633
+def fill_after(30,802
+class FillTest(36,969
+    def test_both(37,1004
+    def test_drivers_empty(42,1185
+    def test_drivers_one(45,1268
+    def test_layout(50,1461
+    def test_1_dimension(78,2217
+    def test_2_shape(91,2642
+    def test_3_shape(100,2969
+    def test_wrong_shape(109,3294
+
+test/bibliopixel/project/import_failure_test.py,202
+class ImportFailureTest(69,1118
+    def test_bad_import_json(71,1232
+    def test_bad_import_yaml(76,1404
+    def test_failure1(82,1588
+    def test_failure2(87,1782
+    def test_failure3(93,2007
+
+test/bibliopixel/project/importer_test.py,350
+class ImporterTest(9,185
+    def test_empty(10,224
+    def test_single(13,277
+    def test_failed_single(17,372
+    def test_double(21,494
+    def test_failed_double(25,598
+    def test_longer(35,897
+    def test_make_object(42,1146
+    def test_aliasing(47,1356
+    def test_exception_unknown(50,1449
+    def test_exception_known(57,1721
+
+test/bibliopixel/project/load_test.py,84
+class LoadTest(6,87
+    def test_split_path(8,167
+    def test_split_path(16,476
+
+test/bibliopixel/project/make.py,41
+def make_project(8,171
+def make(30,673
+
+test/bibliopixel/project/merge_test.py,105
+class MergeTest(11,175
+    def test_empty(12,211
+    def test_single(15,282
+    def test_more(18,377
+
+test/bibliopixel/project/project2_test.py,103
+def classname(9,251
+class Project2Test(13,317
+    def test_empty(14,356
+    def test_single(17,409
+
+test/bibliopixel/project/project_test.py,753
+class ProjectTest(18,356
+    def test_bad_project_json(20,464
+    def test_bad_project_yaml(25,637
+    def test_simple(31,822
+    def test_types(34,872
+    def test_file(44,1314
+    def test_yaml_file(47,1401
+    def test_super(50,1492
+    def test_multi(55,1730
+    def test_shared(62,1997
+    def test_sequence(65,2054
+    def test_sub_animation_names(73,2400
+    def test_numpy(84,2882
+    def test_pixelwidth(87,2937
+    def test_aliases(90,3002
+    def test_simpixel(93,3061
+    def test_project_from_animation_class(98,3266
+    def test_nested_animation(102,3416
+    def test_nested_sequence(105,3510
+    def test_project_colors(108,3602
+    def test_test_example(118,4015
+class AnimationTest(397,8625
+    def step(407,8846
+
+test/bibliopixel/project/recurse_test.py,196
+class Tester:Tester6,104
+    def post_recursion(8,136
+class RecurseTest(16,312
+    def test_empty(17,350
+    def test_trivial(20,427
+    def test_simple(25,581
+    def test_complex(31,869
+
+test/bibliopixel/project/types/base.py,45
+class TypesBaseTest(5,57
+    def make(6,97
+
+test/bibliopixel/project/types/channel_order_test.py,83
+class ChannelOrderTypesTest(5,81
+    def test_some(6,125
+        def test(7,150
+
+test/bibliopixel/project/types/color_test.py,156
+class ColorTypesTest(6,110
+    def test_color_names(7,147
+    def test_color_numbers(15,418
+    def test_edge_cases(26,785
+    def test_errors(33,1021
+
+test/bibliopixel/project/types/colors_test.py,161
+class ColorTypesTest(5,82
+    def test_empty(6,119
+    def test_single(9,189
+    def test_many(13,337
+    def test_1d_list(17,490
+    def test_dict(21,634
+
+test/bibliopixel/project/types/direction_test.py,73
+class DirectionTest(4,35
+    def test_some(5,71
+        def test(6,96
+
+test/bibliopixel/project/types/duration_test.py,54
+class DurationTypesTest(4,35
+    def test_some(5,75
+
+test/bibliopixel/project/types/gamma_test.py,52
+class GammaTypesTest(5,72
+    def test_some(6,109
+
+test/bibliopixel/project/types/ledtype_test.py,54
+class LEDTYPETypesTest(5,83
+    def test_some(6,122
+
+test/bibliopixel/project/types/spi_interface_test.py,59
+class SpiInterfaceTypesTest(5,97
+    def test_some(6,141
+
+test/bibliopixel/threads/compose_events_test.py,64
+class ComposeEventTest(6,82
+    def test_compose_events(7,125
+
+test/bibliopixel/threads/producer_consumer_test.py,115
+class ProducerConsumerTest(6,99
+    def test_all(7,146
+        def producer(12,244
+        def consumer(22,554
+
+test/bibliopixel/threads/sub_test.py,142
+def pause(8,122
+def run(12,169
+class SubTest(27,403
+    def do_test(28,437
+    def test_subprocess(39,848
+    def test_threading(42,907
+
+test/bibliopixel/util/artnet_message_test.py,230
+class DMXMessageTest(6,83
+    def do_test(7,124
+    def test_blackout(19,565
+    def test_trivial(22,634
+    def test_ramp_and_a_half(25,693
+class Original:Original29,788
+    def __init__(30,804
+    def broadcast(37,1046
+
+test/bibliopixel/util/attribute_dict_test.py,127
+    class AttributeDictTest(7,130
+        def test_simple(8,178
+        def test_single(13,316
+        def test_sub(22,556
+
+test/bibliopixel/util/color_list_test.py,816
+def make_numpy(15,570
+class TestBase:TestBase19,634
+    def assert_list_equal(20,650
+class ColorListTest(36,1120
+    def test_simple(37,1170
+    def test_lists(46,1477
+    def test_numpy(54,1707
+    def test_clear_list(62,1960
+    def test_clear_numpy(71,2169
+    def test_copy_list(77,2349
+    def test_copy_numpy(82,2483
+    def test_sum_list(87,2640
+    def test_sum_numpy(90,2727
+    def test_scale_list(93,2828
+    def test_scale_numpy(103,3097
+class MixerTest(114,3378
+    def do_test(115,3424
+    def test_lists(152,4449
+    def test_numpy(157,4657
+class ToTripletsTest(165,4936
+    def test_simple(166,4977
+    def test_numpy(169,5061
+    def test_exact_count(173,5183
+    def test_overage(177,5303
+class CheckTest(191,5656
+    def test_works(192,5692
+    def test_fails(197,5825
+
+test/bibliopixel/util/data_file_test.py,138
+class DataFileTest(23,512
+    def test_yaml_keys(24,551
+    def test_round_trip_data_file(34,924
+    def test_round_trip_yaml(40,1142
+
+test/bibliopixel/util/deprecated_test.py,55
+class DeprecatedTest(33,1001
+    def test_bp(35,1076
+
+test/bibliopixel/util/duration_test.py,189
+class DurationTest(5,56
+    def test_simple(6,95
+    def test_simple_units(13,308
+    def test_simple_failure(20,610
+    def test_complex(39,1150
+    def test_complex_failure(47,1585
+
+test/bibliopixel/util/flatten_test.py,232
+class FlattenTest(6,86
+    def assert_flatten(7,124
+    def assert_unflatten(12,374
+    def test_trivial(17,632
+    def test_simple(20,693
+    def test_three_levels(26,891
+    def test_mix(32,1148
+    def test_error(40,1522
+
+test/bibliopixel/util/image/extract_gif_lines_test.py,128
+class ExtractGifLinesTest(6,103
+    def test_extract(7,149
+    def test_extract_gif_lines(11,283
+    def test_errors(15,436
+
+test/bibliopixel/util/int_names_test.py,80
+class NamesTest(5,57
+    def test_to_index(6,93
+    def test_to_names(19,651
+
+test/bibliopixel/util/limit_test.py,241
+class LimitTest(8,187
+    def test_default(9,223
+    def test_ratio(19,607
+    def test_knee(28,929
+    def test_knee_gain(39,1416
+    def test_knee_gain_disabled(51,1986
+    def test_colors(63,2383
+    def test_empty_colors(82,2976
+
+test/bibliopixel/util/offset_range_test.py,230
+class OffsetRangeTest(5,60
+    def test_empty(6,102
+    def test_empty_copy(24,676
+    def test_positive_offset(35,964
+    def test_negative_offset(56,1782
+    def test_begin_end_offset(74,2409
+    def test_errors(105,3552
+
+test/bibliopixel/util/permutation_test.py,125
+class PermutationTest(5,79
+    def test_permutation(6,121
+    def test_reverse(19,520
+    def test_right_to_left(42,1299
+
+test/bibliopixel/util/persistent_dict_test.py,78
+class PersistentDictTest(12,194
+    def test_reader_writer_data_file(13,239
+
+test/bibliopixel/util/udp_test.py,72
+def receive_udp(11,178
+class UDPTest(25,510
+    def test_full(27,576
+
+test/bibliopixel/util/image/__init__.py,0
+
+test/bibliopixel/util/__init__.py,0
+
+test/bibliopixel/threads/__init__.py,0
+
+test/bibliopixel/project/types/__init__.py,0
+
+test/bibliopixel/project/__init__.py,0
+
+test/bibliopixel/layout/matrix_results.py,0
+
+test/bibliopixel/layout/__init__.py,0
+
+test/bibliopixel/drivers/serial/__init__.py,0
+
+test/bibliopixel/drivers/__init__.py,0
+
+test/bibliopixel/control/envelope/__init__.py,0
+
+test/bibliopixel/control/__init__.py,0
+
+test/bibliopixel/commands/__init__.py,0
+
+test/bibliopixel/colors/__init__.py,0
+
+test/bibliopixel/builder/__init__.py,0
+
+test/bibliopixel/animation/reprocess/__init__.py,0
+
+test/bibliopixel/animation/__init__.py,0
+
+test/bibliopixel/__init__.py,0
+
+test/__init__.py,0
+
+scripts/release_test/tests/__init__.py,0
+
+scripts/extract_movie.py,0
+
+doc/examples/strip_setup.py,0
+
+doc/examples/network_sender_example.py,0
+
+doc/examples/network_receiver_example.py,0
+
+doc/examples/multi_matrix_demo.py,0
+
+doc/examples/matrix_setup.py,0
+
+doc/examples/AnimationQueue.py,0
+
+doc/examples/AllPixelStripTest.py,0
+
+doc/conf.py,0
+
+build/lib/test/bibliopixel/util/image/__init__.py,0
+
+build/lib/test/bibliopixel/util/colors/__init__.py,0
+
+build/lib/test/bibliopixel/util/__init__.py,0
+
+build/lib/test/bibliopixel/threads/__init__.py,0
+
+build/lib/test/bibliopixel/project/types/__init__.py,0
+
+build/lib/test/bibliopixel/project/__init__.py,0
+
+build/lib/test/bibliopixel/main/__init__.py,0
+
+build/lib/test/bibliopixel/layout/matrix_results.py,0
+
+build/lib/test/bibliopixel/layout/__init__.py,0
+
+build/lib/test/bibliopixel/drivers/serial/__init__.py,0
+
+build/lib/test/bibliopixel/drivers/__init__.py,0
+
+build/lib/test/bibliopixel/control/envelope/__init__.py,0
+
+build/lib/test/bibliopixel/control/__init__.py,0
+
+build/lib/test/bibliopixel/colors/__init__.py,0
+
+build/lib/test/bibliopixel/animation/reprocess/__init__.py,0
+
+build/lib/test/bibliopixel/animation/__init__.py,0
+
+build/lib/test/bibliopixel/__init__.py,0
+
+build/lib/scripts/extract_movie.py,0
+
+build/lib/bibliopixel/util/threads/__init__.py,0
+
+build/lib/bibliopixel/util/image/__init__.py,0
+
+build/lib/bibliopixel/util/colors.py,0
+
+build/lib/bibliopixel/util/colors/juce.py,0
+
+build/lib/bibliopixel/util/colors/classic.py,0
+
+build/lib/bibliopixel/util/colors/__init__.py,0
+
+build/lib/bibliopixel/util/__init__.py,0
+
+build/lib/bibliopixel/project/types/colors.py,0
+
+build/lib/bibliopixel/project/types/color.py,0
+
+build/lib/bibliopixel/project/types/__init__.py,0
+
+build/lib/bibliopixel/project/alias_lists.py,0
+
+build/lib/bibliopixel/project/__init__.py,0
+
+build/lib/bibliopixel/main/deleted/__init__.py,0
+
+build/lib/bibliopixel/main/__init__.py,0
+
+build/lib/bibliopixel/layout/geometry/__init__.py,0
+
+build/lib/bibliopixel/layout/__init__.py,0
+
+build/lib/bibliopixel/drivers/SPI/errors.py,0
+
+build/lib/bibliopixel/drivers/SPI/__init__.py,0
+
+build/lib/bibliopixel/drivers/simpixel.py,0
+
+build/lib/bibliopixel/drivers/SimPixel/__init__.py,0
+
+build/lib/bibliopixel/drivers/serial/__init__.py,0
+
+build/lib/bibliopixel/drivers/gif_writer.py,0
+
+build/lib/bibliopixel/drivers/dummy_driver.py,0
+
+build/lib/bibliopixel/drivers/__init__.py,0
+
+build/lib/bibliopixel/control/rest/__init__.py,0
+
+build/lib/bibliopixel/control/envelope/__init__.py,0
+
+build/lib/bibliopixel/control/__init__.py,0
+
+build/lib/bibliopixel/commands/shutdown.py,0
+
+build/lib/bibliopixel/commands/restart.py,0
+
+build/lib/bibliopixel/commands/kill.py,0
+
+build/lib/bibliopixel/commands/__init__.py,0
+
+build/lib/bibliopixel/colors/juce.py,0
+
+build/lib/bibliopixel/colors/classic.py,0
+
+build/lib/bibliopixel/colors/__init__.py,0
+
+build/lib/bibliopixel/animation/reprocess/__init__.py,0
+
+build/lib/bibliopixel/animation/remote/__init__.py,0
+
+build/lib/bibliopixel/animation/gif_writer.py,0
+
+build/lib/bibliopixel/animation/__init__.py,0
+
+bibliopixel/util/threads/__init__.py,0
+
+bibliopixel/util/image/__init__.py,0
+
+bibliopixel/util/colors.py,0
+
+bibliopixel/util/__init__.py,0
+
+bibliopixel/project/types/colors.py,0
+
+bibliopixel/project/types/color.py,0
+
+bibliopixel/project/types/__init__.py,0
+
+bibliopixel/project/alias_lists.py,0
+
+bibliopixel/project/__init__.py,0
+
+bibliopixel/main/__init__.py,0
+
+bibliopixel/layout/geometry/__init__.py,0
+
+bibliopixel/layout/__init__.py,0
+
+bibliopixel/drivers/SPI/errors.py,0
+
+bibliopixel/drivers/SPI/__init__.py,0
+
+bibliopixel/drivers/simpixel.py,0
+
+bibliopixel/drivers/SimPixel/__init__.py,0
+
+bibliopixel/drivers/serial/__init__.py,0
+
+bibliopixel/drivers/gif_writer.py,0
+
+bibliopixel/drivers/dummy_driver.py,0
+
+bibliopixel/drivers/__init__.py,0
+
+bibliopixel/control/rest/__init__.py,0
+
+bibliopixel/control/envelope/__init__.py,0
+
+bibliopixel/control/__init__.py,0
+
+bibliopixel/commands/shutdown.py,0
+
+bibliopixel/commands/restart.py,0
+
+bibliopixel/commands/kill.py,0
+
+bibliopixel/commands/__init__.py,0
+
+bibliopixel/colors/juce.py,0
+
+bibliopixel/colors/classic.py,0
+
+bibliopixel/colors/__init__.py,0
+
+bibliopixel/builder/__init__.py,0
+
+bibliopixel/animation/reprocess/__init__.py,0
+
+bibliopixel/animation/remote/__init__.py,0
+
+bibliopixel/animation/gif_writer.py,0
+
+bibliopixel/animation/__init__.py,0
+
+_doc/examples/strip_setup.py,0
+
+_doc/examples/network_sender_example.py,0
+
+_doc/examples/network_receiver_example.py,0
+
+_doc/examples/multi_matrix_demo.py,0
+
+_doc/examples/matrix_setup.py,0
+
+_doc/examples/AnimationQueue.py,0
+
+_doc/examples/AllPixelStripTest.py,0
+
+_doc/conf.py,0
